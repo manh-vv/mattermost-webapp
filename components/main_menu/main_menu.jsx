@@ -326,7 +326,7 @@ class MainMenu extends React.PureComponent {
                 <Menu.Group>
                     {pluginItems}
                 </Menu.Group>
-                <Menu.Group>
+                {/* <Menu.Group>
                     <Menu.ItemLink
                         id='integrations'
                         show={showIntegrations}
@@ -404,7 +404,7 @@ class MainMenu extends React.PureComponent {
                         text={formatMessage({id: 'navbar_dropdown.about', defaultMessage: 'About {appTitle}'}, {appTitle: this.props.siteName || 'Iconloop'})}
                         icon={this.props.mobile && <i className='fa fa-info'/>}
                     />
-                </Menu.Group>
+                </Menu.Group> */}
                 <Menu.Group>
                     <Menu.ItemAction
                         id='logout'
