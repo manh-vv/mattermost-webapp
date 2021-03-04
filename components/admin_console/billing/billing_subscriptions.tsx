@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React, {useEffect, useState} from 'react';
@@ -32,7 +32,7 @@ import {
 import {isCustomerCardExpired} from 'utils/cloud_utils';
 
 import privateCloudImage from 'images/private-cloud-image.svg';
-import upgradeMattermostCloudImage from 'images/upgrade-mattermost-cloud-image.svg';
+import upgradeIconloopCloudImage from 'images/upgrade-mattermost-cloud-image.svg';
 
 import BillingSummary from './billing_summary';
 import PlanDetails from './plan_details';
@@ -64,7 +64,7 @@ const BillingSubscriptions: React.FC<Props> = () => {
 
     const [showCreditCardBanner, setShowCreditCardBanner] = useState(true);
 
-    const onUpgradeMattermostCloud = () => {
+    const onUpgradeIconloopCloud = () => {
         trackEvent('cloud_admin', 'click_upgrade_mattermost_cloud');
 
         dispatch(openModal({
@@ -122,31 +122,31 @@ const BillingSubscriptions: React.FC<Props> = () => {
         ]));
     };
 
-    const upgradeMattermostCloud = () => (
-        <div className='UpgradeMattermostCloud'>
-            <div className='UpgradeMattermostCloud__image'>
-                <img src={upgradeMattermostCloudImage}/>
+    const upgradeIconloopCloud = () => (
+        <div className='UpgradeIconloopCloud'>
+            <div className='UpgradeIconloopCloud__image'>
+                <img src={upgradeIconloopCloudImage}/>
             </div>
-            <div className='UpgradeMattermostCloud__title'>
+            <div className='UpgradeIconloopCloud__title'>
                 <FormattedMessage
-                    id='admin.billing.subscription.upgradeMattermostCloud.title'
+                    id='admin.billing.subscription.upgradeIconloopCloud.title'
                     defaultMessage='Need more users?'
                 />
             </div>
-            <div className='UpgradeMattermostCloud__description'>
+            <div className='UpgradeIconloopCloud__description'>
                 <FormattedMarkdownMessage
-                    id='admin.billing.subscription.upgradeMattermostCloud.description'
+                    id='admin.billing.subscription.upgradeIconloopCloud.description'
                     defaultMessage='The free tier is **limited to 10 users.** Get access to more users, teams and other great features'
                 />
             </div>
             <button
                 type='button'
-                onClick={onUpgradeMattermostCloud}
-                className='UpgradeMattermostCloud__upgradeButton'
+                onClick={onUpgradeIconloopCloud}
+                className='UpgradeIconloopCloud__upgradeButton'
             >
                 <FormattedMessage
-                    id='admin.billing.subscription.upgradeMattermostCloud.upgradeButton'
-                    defaultMessage='Upgrade Mattermost Cloud'
+                    id='admin.billing.subscription.upgradeIconloopCloud.upgradeButton'
+                    defaultMessage='Upgrade Iconloop Cloud'
                 />
             </button>
         </div>
@@ -164,7 +164,7 @@ const BillingSubscriptions: React.FC<Props> = () => {
                 <div className='PrivateCloudCard__text-description'>
                     <FormattedMessage
                         id='admin.billing.subscription.privateCloudCard.description'
-                        defaultMessage='If you need software with dedicated, single-tenant architecture, Mattermost Private Cloud (Beta) is the solution for high-trust collaboration.'
+                        defaultMessage='If you need software with dedicated, single-tenant architecture, Iconloop Private Cloud (Beta) is the solution for high-trust collaboration.'
                     />
                 </div>
                 <a
@@ -268,7 +268,7 @@ const BillingSubscriptions: React.FC<Props> = () => {
                             message={formatMessage({
                                 id: 'billing.subscription.info.headsup.description',
                                 defaultMessage:
-                    'You’re nearing the user limit with the free tier of Mattermost Cloud. We’ll let you know if you hit that limit.',
+                    'You’re nearing the user limit with the free tier of Iconloop Cloud. We’ll let you know if you hit that limit.',
                             })}
                             onDismiss={() => handleHide()}
                         />
@@ -307,7 +307,7 @@ const BillingSubscriptions: React.FC<Props> = () => {
                     )}
                     <div className='BillingSubscriptions__topWrapper'>
                         <PlanDetails/>
-                        {subscription?.is_paid_tier === 'true' ? <BillingSummary/> : upgradeMattermostCloud()}
+                        {subscription?.is_paid_tier === 'true' ? <BillingSummary/> : upgradeIconloopCloud()}
                     </div>
                     {privateCloudCard()}
                     {cancelSubscription()}

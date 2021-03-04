@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -29,7 +29,7 @@ const notices: Notice[] = [
         title: (
             <FormattedMarkdownMessage
                 id='system_notice.title'
-                defaultMessage='**Notice**\nfrom Mattermost'
+                defaultMessage='**Notice**\nfrom Iconloop'
             />
         ),
         icon: mattermostIcon,
@@ -53,7 +53,7 @@ const notices: Notice[] = [
         title: (
             <FormattedMarkdownMessage
                 id='system_notice.title'
-                defaultMessage='**Notice**\nfrom Mattermost'
+                defaultMessage='**Notice**\nfrom Iconloop'
             />
         ),
         icon: mattermostIcon,
@@ -83,7 +83,7 @@ const notices: Notice[] = [
         title: (
             <FormattedMarkdownMessage
                 id='system_notice.title'
-                defaultMessage='**Notice**\nfrom Mattermost'
+                defaultMessage='**Notice**\nfrom Iconloop'
             />
         ),
         icon: mattermostIcon,
@@ -118,7 +118,7 @@ const notices: Notice[] = [
         title: (
             <FormattedMarkdownMessage
                 id='system_notice.title'
-                defaultMessage='**Notice**\nfrom Mattermost'
+                defaultMessage='**Notice**\nfrom Iconloop'
             />
         ),
         icon: mattermostIcon,

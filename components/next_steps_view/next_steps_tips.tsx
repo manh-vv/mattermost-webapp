@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -62,7 +62,7 @@ const getDownloadButtonString = () => {
         return (
             <FormattedMessage
                 id='next_steps_view.tips.downloadForWindows'
-                defaultMessage='Download Mattermost for Windows'
+                defaultMessage='Download Iconloop for Windows'
             />
         );
     }
@@ -71,7 +71,7 @@ const getDownloadButtonString = () => {
         return (
             <FormattedMessage
                 id='next_steps_view.tips.downloadForMac'
-                defaultMessage='Download Mattermost for Mac'
+                defaultMessage='Download Iconloop for Mac'
             />
         );
     }
@@ -81,7 +81,7 @@ const getDownloadButtonString = () => {
     return (
         <FormattedMessage
             id='next_steps_view.tips.downloadForDefault'
-            defaultMessage='Download Mattermost'
+            defaultMessage='Download Iconloop'
         />
     );
 };
@@ -193,7 +193,7 @@ export default function NextStepsTips(props: Props) {
                         <h3>
                             <FormattedMessage
                                 id='next_steps_view.tips.addPlugins'
-                                defaultMessage='Add plugins to Mattermost'
+                                defaultMessage='Add plugins to Iconloop'
                             />
                         </h3>
                         <FormattedMessage
@@ -249,7 +249,7 @@ export default function NextStepsTips(props: Props) {
                         </h3>
                         <FormattedMessage
                             id='next_steps_view.tips.addPlugins.texts'
-                            defaultMessage='Work more efficiently with Keyboard Shortcuts in Mattermost.'
+                            defaultMessage='Work more efficiently with Keyboard Shortcuts in Iconloop.'
                         />
                         <button
                             className='NextStepsView__button NextStepsView__finishButton primary'

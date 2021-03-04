@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 import {mountWithIntl} from 'tests/helpers/intl-test-helper';
 import DeleteEmoji from 'components/emoji/delete_emoji_modal';

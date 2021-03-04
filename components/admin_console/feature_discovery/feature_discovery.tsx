@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -140,7 +140,7 @@ export default class FeatureDiscovery extends React.PureComponent<Props, State> 
                     <p className='trial-legal-terms'>
                         <FormattedMarkdownMessage
                             id='admin.license.trial-request.accept-terms'
-                            defaultMessage='By clicking **Start trial**, I agree to the [Mattermost Software Evaluation Agreement](!https://mattermost.com/software-evaluation-agreement/), [Privacy Policy](!https://mattermost.com/privacy-policy/), and receiving product emails.'
+                            defaultMessage='By clicking **Start trial**, I agree to the [Iconloop Software Evaluation Agreement](!https://mattermost.com/software-evaluation-agreement/), [Privacy Policy](!https://mattermost.com/privacy-policy/), and receiving product emails.'
                         />
                     </p>
                 </div>

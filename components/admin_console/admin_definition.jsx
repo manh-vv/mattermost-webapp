@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -237,7 +237,7 @@ const AdminDefinition = {
                 'admin.license.edition',
                 'admin.license.type',
                 'admin.license.key',
-                'Mattermost Enterprise Edition. Unlock enterprise features in this software through the purchase of a subscription from ',
+                'Iconloop Enterprise Edition. Unlock enterprise features in this software through the purchase of a subscription from ',
                 'This software is offered under a commercial license.\n\nSee ENTERPRISE-EDITION-LICENSE.txt in your root install directory for details. See NOTICE.txt for information about open source software used in this system.',
             ],
             isDisabled: it.not(it.userHasWritePermissionOnResource('about')),
@@ -595,7 +595,7 @@ const AdminDefinition = {
                         label: t('admin.service.siteURL'),
                         label_default: 'Site URL:',
                         help_text: t('admin.service.siteURLDescription'),
-                        help_text_default: 'The URL that users will use to access Mattermost. Standard ports, such as 80 and 443, can be omitted, but non-standard ports are required. For example: http://example.com:8065. This setting is required.\n \nMattermost may be hosted at a subpath. For example: http://example.com:8065/company/mattermost. A restart is required before the server will work correctly.',
+                        help_text_default: 'The URL that users will use to access Iconloop. Standard ports, such as 80 and 443, can be omitted, but non-standard ports are required. For example: http://example.com:8065. This setting is required.\n \nIconloop may be hosted at a subpath. For example: http://example.com:8065/company/mattermost. A restart is required before the server will work correctly.',
                         help_text_markdown: true,
                         placeholder: t('admin.service.siteURLExample'),
                         placeholder_default: 'E.g.: "http://example.com:8065"',
@@ -623,7 +623,7 @@ const AdminDefinition = {
                         placeholder: t('admin.service.listenExample'),
                         placeholder_default: 'E.g.: ":8065"',
                         help_text: t('admin.service.listenDescription'),
-                        help_text_default: 'The address and port to which to bind and listen. Specifying ":8065" will bind to all network interfaces. Specifying "127.0.0.1:8065" will only bind to the network interface having that IP address. If you choose a port of a lower level (called "system ports" or "well-known ports", in the range of 0-1023), you must have permissions to bind to that port. On Linux you can use: "sudo setcap cap_net_bind_service=+ep ./bin/mattermost" to allow Mattermost to bind to well-known ports.',
+                        help_text_default: 'The address and port to which to bind and listen. Specifying ":8065" will bind to all network interfaces. Specifying "127.0.0.1:8065" will only bind to the network interface having that IP address. If you choose a port of a lower level (called "system ports" or "well-known ports", in the range of 0-1023), you must have permissions to bind to that port. On Linux you can use: "sudo setcap cap_net_bind_service=+ep ./bin/mattermost" to allow Iconloop to bind to well-known ports.',
                         isDisabled: it.not(it.userHasWritePermissionOnResource('environment')),
                     },
                     {
@@ -770,7 +770,7 @@ const AdminDefinition = {
                         label: t('admin.service.managedResourcePaths'),
                         label_default: 'Managed Resource Paths:',
                         help_text: t('admin.service.managedResourcePathsDescription'),
-                        help_text_default: 'A comma-separated list of paths on the Mattermost server that are managed by another service. See [here](!https://docs.mattermost.com/install/desktop-managed-resources.html) for more information.',
+                        help_text_default: 'A comma-separated list of paths on the Iconloop server that are managed by another service. See [here](!https://docs.mattermost.com/install/desktop-managed-resources.html) for more information.',
                         help_text_markdown: true,
                         isDisabled: it.not(it.userHasWritePermissionOnResource('environment')),
                     },
@@ -781,7 +781,7 @@ const AdminDefinition = {
                         label: t('admin.reload.button'),
                         label_default: 'Reload Configuration From Disk',
                         help_text: t('admin.reload.reloadDescription'),
-                        help_text_default: 'Deployments using multiple databases can switch from one master database to another without restarting the Mattermost server by updating "config.json" to the new desired configuration and using the {featureName} feature to load the new settings while the server is running. The administrator should then use the {recycleDatabaseConnections} feature to recycle the database connections based on the new settings.',
+                        help_text_default: 'Deployments using multiple databases can switch from one master database to another without restarting the Iconloop server by updating "config.json" to the new desired configuration and using the {featureName} feature to load the new settings while the server is running. The administrator should then use the {recycleDatabaseConnections} feature to recycle the database connections based on the new settings.',
                         help_text_values: {
                             featureName: (
                                 <b>
@@ -988,7 +988,7 @@ const AdminDefinition = {
                         label: t('admin.image.amazonS3RegionTitle'),
                         label_default: 'Amazon S3 Region:',
                         help_text: t('admin.image.amazonS3RegionDescription'),
-                        help_text_default: 'AWS region you selected when creating your S3 bucket. If no region is set, Mattermost attempts to get the appropriate region from AWS, or sets it to "us-east-1" if none found.',
+                        help_text_default: 'AWS region you selected when creating your S3 bucket. If no region is set, Iconloop attempts to get the appropriate region from AWS, or sets it to "us-east-1" if none found.',
                         placeholder: t('admin.image.amazonS3RegionExample'),
                         placeholder_default: 'E.g.: "us-east-1"',
                         isDisabled: it.any(
@@ -1281,7 +1281,7 @@ const AdminDefinition = {
                         label: t('admin.environment.smtp.skipServerCertificateVerification.title'),
                         label_default: 'Skip Server Certificate Verification:',
                         help_text: t('admin.environment.smtp.skipServerCertificateVerification.description'),
-                        help_text_default: 'When true, Mattermost will not verify the email server certificate.',
+                        help_text_default: 'When true, Iconloop will not verify the email server certificate.',
                         isDisabled: it.not(it.userHasWritePermissionOnResource('environment')),
                     },
                     {
@@ -1544,7 +1544,7 @@ const AdminDefinition = {
                         label: t('admin.log.locationTitle'),
                         label_default: 'File Log Directory:',
                         help_text: t('admin.log.locationDescription'),
-                        help_text_default: 'The location of the log files. If blank, they are stored in the ./logs directory. The path that you set must exist and Mattermost must have write permissions in it. Changing this setting requires a server restart before taking effect.',
+                        help_text_default: 'The location of the log files. If blank, they are stored in the ./logs directory. The path that you set must exist and Iconloop must have write permissions in it. Changing this setting requires a server restart before taking effect.',
                         placeholder: t('admin.log.locationPlaceholder'),
                         placeholder_default: 'Enter your file location',
                         isDisabled: it.any(
@@ -1577,7 +1577,7 @@ const AdminDefinition = {
                         label: t('admin.log.enableDiagnostics'),
                         label_default: 'Enable Diagnostics and Error Reporting:',
                         help_text: t('admin.log.enableDiagnosticsDescription'),
-                        help_text_default: 'Enable this feature to improve the quality and performance of Mattermost by sending error reporting and diagnostic information to Mattermost, Inc. Read our [privacy policy](!https://about.mattermost.com/default-privacy-policy/) to learn more.',
+                        help_text_default: 'Enable this feature to improve the quality and performance of Iconloop by sending error reporting and diagnostic information to Iconloop, Inc. Read our [privacy policy](!https://about.mattermost.com/default-privacy-policy/) to learn more.',
                         help_text_markdown: true,
                         onConfigSave: (displayVal, previousVal) => {
                             if (previousVal && previousVal !== displayVal) {
@@ -1639,7 +1639,7 @@ const AdminDefinition = {
                         label: t('admin.metrics.enableTitle'),
                         label_default: 'Enable Performance Monitoring:',
                         help_text: t('admin.metrics.enableDescription'),
-                        help_text_default: 'When true, Mattermost will enable performance monitoring collection and profiling. Please see [documentation](!http://docs.mattermost.com/deployment/metrics.html) to learn more about configuring performance monitoring for Mattermost.',
+                        help_text_default: 'When true, Iconloop will enable performance monitoring collection and profiling. Please see [documentation](!http://docs.mattermost.com/deployment/metrics.html) to learn more about configuring performance monitoring for Iconloop.',
                         help_text_markdown: true,
                         isDisabled: it.not(it.userHasWritePermissionOnResource('environment')),
                     },
@@ -1693,7 +1693,7 @@ const AdminDefinition = {
                         placeholder: t('admin.service.internalConnectionsEx'),
                         placeholder_default: 'webhooks.internal.example.com 127.0.0.1 10.0.16.0/28',
                         help_text: t('admin.service.internalConnectionsDesc'),
-                        help_text_default: 'A whitelist of local network addresses that can be requested by the Mattermost server on behalf of a client. Care should be used when configuring this setting to prevent unintended access to your local network. See [documentation](!https://mattermost.com/pl/default-allow-untrusted-internal-connections) to learn more.',
+                        help_text_default: 'A whitelist of local network addresses that can be requested by the Iconloop server on behalf of a client. Care should be used when configuring this setting to prevent unintended access to your local network. See [documentation](!https://mattermost.com/pl/default-allow-untrusted-internal-connections) to learn more.',
                         help_text_markdown: true,
                         isDisabled: it.not(it.userHasWritePermissionOnResource('environment')),
                     },
@@ -1721,9 +1721,9 @@ const AdminDefinition = {
                         label: t('admin.team.siteNameTitle'),
                         label_default: 'Site Name:',
                         help_text: t('admin.team.siteNameDescription'),
-                        help_text_default: 'Name of service shown in login screens and UI. When not specified, it defaults to "Mattermost".',
+                        help_text_default: 'Name of service shown in login screens and UI. When not specified, it defaults to "Iconloop".',
                         placeholder: t('admin.team.siteNameExample'),
-                        placeholder_default: 'E.g.: "Mattermost"',
+                        placeholder_default: 'E.g.: "Iconloop"',
                         max_length: Constants.MAX_SITENAME_LENGTH,
                         isDisabled: it.not(it.userHasWritePermissionOnResource('site')),
                     },
@@ -1775,7 +1775,7 @@ const AdminDefinition = {
                         label: t('admin.support.enableAskCommunityTitle'),
                         label_default: 'Enable Ask Community Link:',
                         help_text: t('admin.support.enableAskCommunityDesc'),
-                        help_text_default: 'When true, "Ask the community" link appears on the Mattermost user interface and Main Menu, which allows users to join the Mattermost Community to ask questions and help others troubleshoot issues. When false, the link is hidden from users.',
+                        help_text_default: 'When true, "Ask the community" link appears on the Iconloop user interface and Main Menu, which allows users to join the Iconloop Community to ask questions and help others troubleshoot issues. When false, the link is hidden from users.',
                         isDisabled: it.not(it.userHasWritePermissionOnResource('site')),
                     },
                     {
@@ -1784,7 +1784,7 @@ const AdminDefinition = {
                         label: t('admin.support.helpTitle'),
                         label_default: 'Help Link:',
                         help_text: t('admin.support.helpDesc'),
-                        help_text_default: 'The URL for the Help link on the Mattermost login page, sign-up pages, and Main Menu. If this field is empty, the Help link is hidden from users.',
+                        help_text_default: 'The URL for the Help link on the Iconloop login page, sign-up pages, and Main Menu. If this field is empty, the Help link is hidden from users.',
                         isDisabled: it.not(it.userHasWritePermissionOnResource('site')),
                     },
                     {
@@ -1802,7 +1802,7 @@ const AdminDefinition = {
                         label: t('admin.support.termsTitle'),
                         label_default: 'Terms of Service Link:',
                         help_text: t('admin.support.termsDesc'),
-                        help_text_default: 'Link to the terms under which users may use your online service. By default, this includes the "Mattermost Conditions of Use (End Users)" explaining the terms under which Mattermost software is provided to end users. If you change the default link to add your own terms for using the service you provide, your new terms must include a link to the default terms so end users are aware of the Mattermost Conditions of Use (End User) for Mattermost software.',
+                        help_text_default: 'Link to the terms under which users may use your online service. By default, this includes the "Iconloop Conditions of Use (End Users)" explaining the terms under which Iconloop software is provided to end users. If you change the default link to add your own terms for using the service you provide, your new terms must include a link to the default terms so end users are aware of the Iconloop Conditions of Use (End User) for Iconloop software.',
                         isDisabled: it.not(it.userHasWritePermissionOnResource('site')),
                         isHidden: it.configIsTrue('ExperimentalSettings', 'RestrictSystemAdmin'),
                     },
@@ -1822,7 +1822,7 @@ const AdminDefinition = {
                         label: t('admin.support.aboutTitle'),
                         label_default: 'About Link:',
                         help_text: t('admin.support.aboutDesc'),
-                        help_text_default: 'The URL for the About link on the Mattermost login and sign-up pages. If this field is empty, the About link is hidden from users.',
+                        help_text_default: 'The URL for the About link on the Iconloop login and sign-up pages. If this field is empty, the About link is hidden from users.',
                         isDisabled: it.not(it.userHasWritePermissionOnResource('site')),
                         isHidden: it.configIsTrue('ExperimentalSettings', 'RestrictSystemAdmin'),
                     },
@@ -1840,9 +1840,9 @@ const AdminDefinition = {
                         type: Constants.SettingsTypes.TYPE_TEXT,
                         key: 'NativeAppSettings.AppDownloadLink',
                         label: t('admin.customization.appDownloadLinkTitle'),
-                        label_default: 'Mattermost Apps Download Page Link:',
+                        label_default: 'Iconloop Apps Download Page Link:',
                         help_text: t('admin.customization.appDownloadLinkDesc'),
-                        help_text_default: 'Add a link to a download page for the Mattermost apps. When a link is present, an option to "Download Mattermost Apps" will be added in the Main Menu so users can find the download page. Leave this field blank to hide the option from the Main Menu.',
+                        help_text_default: 'Add a link to a download page for the Iconloop apps. When a link is present, an option to "Download Iconloop Apps" will be added in the Main Menu so users can find the download page. Leave this field blank to hide the option from the Main Menu.',
                         isDisabled: it.not(it.userHasWritePermissionOnResource('site')),
                         isHidden: it.configIsTrue('ExperimentalSettings', 'RestrictSystemAdmin'),
                     },
@@ -1903,7 +1903,7 @@ const AdminDefinition = {
                         label_default: 'Available Languages:',
                         help_text: t('admin.general.localization.availableLocalesDescription'),
                         help_text_markdown: true,
-                        help_text_default: 'Set which languages are available for users in Account Settings (leave this field blank to have all supported languages available). If you\'re manually adding new languages, the **Default Client Language** must be added before saving this setting.\n \nWould like to help with translations? Join the [Mattermost Translation Server](!http://translate.mattermost.com/) to contribute.',
+                        help_text_default: 'Set which languages are available for users in Account Settings (leave this field blank to have all supported languages available). If you\'re manually adding new languages, the **Default Client Language** must be added before saving this setting.\n \nWould like to help with translations? Join the [Iconloop Translation Server](!http://translate.mattermost.com/) to contribute.',
                         multiple: true,
                         no_result: t('admin.general.localization.availableLocalesNoResults'),
                         no_result_default: 'No results found',
@@ -1962,12 +1962,12 @@ const AdminDefinition = {
                         label: t('admin.team.restrictDirectMessage'),
                         label_default: 'Enable users to open Direct Message channels with:',
                         help_text: t('admin.team.restrictDirectMessageDesc'),
-                        help_text_default: '"Any user on the Mattermost server" enables users to open a Direct Message channel with any user on the server, even if they are not on any teams together. "Any member of the team" limits the ability in the Direct Messages "More" menu to only open Direct Message channels with users who are in the same team.\n \nNote: This setting only affects the UI, not permissions on the server.',
+                        help_text_default: '"Any user on the Iconloop server" enables users to open a Direct Message channel with any user on the server, even if they are not on any teams together. "Any member of the team" limits the ability in the Direct Messages "More" menu to only open Direct Message channels with users who are in the same team.\n \nNote: This setting only affects the UI, not permissions on the server.',
                         options: [
                             {
                                 value: 'any',
                                 display_name: t('admin.team.restrict_direct_message_any'),
-                                display_name_default: 'Any user on the Mattermost server',
+                                display_name_default: 'Any user on the Iconloop server',
                             },
                             {
                                 value: 'team',
@@ -2091,7 +2091,7 @@ const AdminDefinition = {
                         label: t('admin.environment.notifications.enable.label'),
                         label_default: 'Enable Email Notifications:',
                         help_text: t('admin.environment.notifications.enable.help'),
-                        help_text_default: 'Typically set to true in production. When true, Mattermost attempts to send email notifications. When false, email invitations and user account setting change emails are still sent as long as the SMTP server is configured. Developers may set this field to false to skip email setup for faster development.',
+                        help_text_default: 'Typically set to true in production. When true, Iconloop attempts to send email notifications. When false, email invitations and user account setting change emails are still sent as long as the SMTP server is configured. Developers may set this field to false to skip email setup for faster development.',
                         isDisabled: it.not(it.userHasWritePermissionOnResource('site')),
                     },
                     {
@@ -2126,7 +2126,7 @@ const AdminDefinition = {
                         label: t('admin.environment.notifications.contents.label'),
                         label_default: 'Email Notification Contents:',
                         help_text: t('admin.environment.notifications.contents.help'),
-                        help_text_default: '**Send full message contents** - Sender name and channel are included in email notifications. Typically used for compliance reasons if Mattermost contains confidential information and policy dictates it cannot be stored in email.\n  **Send generic description with only sender name** - Only the name of the person who sent the message, with no information about channel name or message contents are included in email notifications. Typically used for compliance reasons if Mattermost contains confidential information and policy dictates it cannot be stored in email.',
+                        help_text_default: '**Send full message contents** - Sender name and channel are included in email notifications. Typically used for compliance reasons if Iconloop contains confidential information and policy dictates it cannot be stored in email.\n  **Send generic description with only sender name** - Only the name of the person who sent the message, with no information about channel name or message contents are included in email notifications. Typically used for compliance reasons if Iconloop contains confidential information and policy dictates it cannot be stored in email.',
                         help_text_markdown: true,
                         options: [
                             {
@@ -2149,9 +2149,9 @@ const AdminDefinition = {
                         label: t('admin.environment.notifications.notificationDisplay.label'),
                         label_default: 'Notification Display Name:',
                         placeholder: t('admin.environment.notifications.notificationDisplay.placeholder'),
-                        placeholder_default: 'Ex: "Mattermost Notification", "System", "No-Reply"',
+                        placeholder_default: 'Ex: "Iconloop Notification", "System", "No-Reply"',
                         help_text: t('admin.environment.notifications.notificationDisplay.help'),
-                        help_text_default: 'Display name on email account used when sending notification emails from Mattermost.',
+                        help_text_default: 'Display name on email account used when sending notification emails from Iconloop.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('site')),
                             it.stateIsFalse('EmailSettings.SendEmailNotifications'),
@@ -2165,7 +2165,7 @@ const AdminDefinition = {
                         placeholder: t('admin.environment.notifications.feedbackEmail.placeholder'),
                         placeholder_default: 'Ex: "mattermost@yourcompany.com", "admin@yourcompany.com"',
                         help_text: t('admin.environment.notifications.feedbackEmail.help'),
-                        help_text_default: 'Email address displayed on email account used when sending notification emails from Mattermost.',
+                        help_text_default: 'Email address displayed on email account used when sending notification emails from Iconloop.',
                         isHidden: it.configIsTrue('ExperimentalSettings', 'RestrictSystemAdmin'),
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('site')),
@@ -2180,7 +2180,7 @@ const AdminDefinition = {
                         placeholder: t('admin.environment.notifications.replyToAddress.placeholder'),
                         placeholder_default: 'Ex: "mattermost@yourcompany.com", "admin@yourcompany.com"',
                         help_text: t('admin.environment.notifications.replyToAddress.help'),
-                        help_text_default: 'Email address used in the Reply-To header when sending notification emails from Mattermost.',
+                        help_text_default: 'Email address used in the Reply-To header when sending notification emails from Iconloop.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('site')),
                             it.stateIsFalse('EmailSettings.SendEmailNotifications'),
@@ -2194,7 +2194,7 @@ const AdminDefinition = {
                         placeholder: t('admin.environment.notifications.feedbackOrganization.placeholder'),
                         placeholder_default: 'Ex: "© ABC Corporation, 565 Knight Way, Palo Alto, California, 94305, USA"',
                         help_text: t('admin.environment.notifications.feedbackOrganization.help'),
-                        help_text_default: 'Organization name and address displayed on email notifications from Mattermost, such as "© ABC Corporation, 565 Knight Way, Palo Alto, California, 94305, USA". If the field is left empty, the organization name and address will not be displayed.',
+                        help_text_default: 'Organization name and address displayed on email notifications from Iconloop, such as "© ABC Corporation, 565 Knight Way, Palo Alto, California, 94305, USA". If the field is left empty, the organization name and address will not be displayed.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('site')),
                             it.stateIsFalse('EmailSettings.SendEmailNotifications'),
@@ -2620,7 +2620,7 @@ const AdminDefinition = {
                         label: t('admin.email.allowSignupTitle'),
                         label_default: 'Enable account creation with email:',
                         help_text: t('admin.email.allowSignupDescription'),
-                        help_text_default: 'When true, Mattermost allows account creation using email and password. This value should be false only when you want to limit sign up to a single sign-on service like AD/LDAP, SAML or GitLab.',
+                        help_text_default: 'When true, Iconloop allows account creation using email and password. This value should be false only when you want to limit sign up to a single sign-on service like AD/LDAP, SAML or GitLab.',
                         isDisabled: it.not(it.userHasWritePermissionOnResource('authentication')),
                     },
                     {
@@ -2629,7 +2629,7 @@ const AdminDefinition = {
                         label: t('admin.email.requireVerificationTitle'),
                         label_default: 'Require Email Verification: ',
                         help_text: t('admin.email.requireVerificationDescription'),
-                        help_text_default: 'Typically set to true in production. When true, Mattermost requires email verification after account creation prior to allowing login. Developers may set this field to false to skip sending verification emails for faster development.',
+                        help_text_default: 'Typically set to true in production. When true, Iconloop requires email verification after account creation prior to allowing login. Developers may set this field to false to skip sending verification emails for faster development.',
                         isDisabled: it.not(it.userHasWritePermissionOnResource('authentication')),
                     },
                     {
@@ -2638,7 +2638,7 @@ const AdminDefinition = {
                         label: t('admin.email.allowEmailSignInTitle'),
                         label_default: 'Enable sign-in with email:',
                         help_text: t('admin.email.allowEmailSignInDescription'),
-                        help_text_default: 'When true, Mattermost allows users to sign in using their email and password.',
+                        help_text_default: 'When true, Iconloop allows users to sign in using their email and password.',
                         isDisabled: it.not(it.userHasWritePermissionOnResource('authentication')),
                     },
                     {
@@ -2709,7 +2709,7 @@ const AdminDefinition = {
                         label_default: 'Enforce Multi-factor Authentication:',
                         help_text: t('admin.service.enforceMfaDesc'),
                         help_text_markdown: true,
-                        help_text_default: 'When true, [multi-factor authentication](!https://docs.mattermost.com/deployment/auth.html) is required for login. New users will be required to configure MFA on signup. Logged in users without MFA configured are redirected to the MFA setup page until configuration is complete.\n \nIf your system has users with login methods other than AD/LDAP and email, MFA must be enforced with the authentication provider outside of Mattermost.',
+                        help_text_default: 'When true, [multi-factor authentication](!https://docs.mattermost.com/deployment/auth.html) is required for login. New users will be required to configure MFA on signup. Logged in users without MFA configured are redirected to the MFA setup page until configuration is complete.\n \nIf your system has users with login methods other than AD/LDAP and email, MFA must be enforced with the authentication provider outside of Iconloop.',
                         isHidden: it.not(it.licensedForFeature('MFA')),
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
@@ -2735,7 +2735,7 @@ const AdminDefinition = {
                         label: t('admin.ldap.enableTitle'),
                         label_default: 'Enable sign-in with AD/LDAP:',
                         help_text: t('admin.ldap.enableDesc'),
-                        help_text_default: 'When true, Mattermost allows login using AD/LDAP',
+                        help_text_default: 'When true, Iconloop allows login using AD/LDAP',
                         isDisabled: it.not(it.userHasWritePermissionOnResource('authentication')),
                     },
                     {
@@ -2744,7 +2744,7 @@ const AdminDefinition = {
                         label: t('admin.ldap.enableSyncTitle'),
                         label_default: 'Enable Synchronization with AD/LDAP:',
                         help_text: t('admin.ldap.enableSyncDesc'),
-                        help_text_default: 'When true, Mattermost periodically synchronizes users from AD/LDAP. When false, user attributes are updated from AD/LDAP during user login only.',
+                        help_text_default: 'When true, Iconloop periodically synchronizes users from AD/LDAP. When false, user attributes are updated from AD/LDAP during user login only.',
                         isDisabled: it.not(it.userHasWritePermissionOnResource('authentication')),
                     },
                     {
@@ -2770,7 +2770,7 @@ const AdminDefinition = {
                         label: t('admin.ldap.portTitle'),
                         label_default: 'AD/LDAP Port:',
                         help_text: t('admin.ldap.portDesc'),
-                        help_text_default: 'The port Mattermost will use to connect to the AD/LDAP server. Default is 389.',
+                        help_text_default: 'The port Iconloop will use to connect to the AD/LDAP server. Default is 389.',
                         placeholder: t('admin.ldap.portEx'),
                         placeholder_default: 'E.g.: "389"',
                         isDisabled: it.any(
@@ -2876,7 +2876,7 @@ const AdminDefinition = {
                         label: t('admin.ldap.baseTitle'),
                         label_default: 'BaseDN:',
                         help_text: t('admin.ldap.baseDesc'),
-                        help_text_default: 'The Base DN is the Distinguished Name of the location where Mattermost should start its search for user and group objects in the AD/LDAP tree.',
+                        help_text_default: 'The Base DN is the Distinguished Name of the location where Iconloop should start its search for user and group objects in the AD/LDAP tree.',
                         placeholder: t('admin.ldap.baseEx'),
                         placeholder_default: 'E.g.: "ou=Unit Name,dc=corp,dc=example,dc=com"',
                         isDisabled: it.any(
@@ -2893,7 +2893,7 @@ const AdminDefinition = {
                         label: t('admin.ldap.bindUserTitle'),
                         label_default: 'Bind Username:',
                         help_text: t('admin.ldap.bindUserDesc'),
-                        help_text_default: 'The username used to perform the AD/LDAP search. This should typically be an account created specifically for use with Mattermost. It should have access limited to read the portion of the AD/LDAP tree specified in the BaseDN field.',
+                        help_text_default: 'The username used to perform the AD/LDAP search. This should typically be an account created specifically for use with Iconloop. It should have access limited to read the portion of the AD/LDAP tree specified in the BaseDN field.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.all(
@@ -2923,7 +2923,7 @@ const AdminDefinition = {
                         label: t('admin.ldap.userFilterTitle'),
                         label_default: 'User Filter:',
                         help_text: t('admin.ldap.userFilterDisc'),
-                        help_text_default: '(Optional) Enter an AD/LDAP filter to use when searching for user objects. Only the users selected by the query will be able to access Mattermost. For Active Directory, the query to filter out disabled users is (&(objectCategory=Person)(!(UserAccountControl:1.2.840.113556.1.4.803:=2))).',
+                        help_text_default: '(Optional) Enter an AD/LDAP filter to use when searching for user objects. Only the users selected by the query will be able to access Iconloop. For Active Directory, the query to filter out disabled users is (&(objectCategory=Person)(!(UserAccountControl:1.2.840.113556.1.4.803:=2))).',
                         placeholder: t('admin.ldap.userFilterEx'),
                         placeholder_default: 'Ex. "(objectClass=user)"',
                         isDisabled: it.any(
@@ -2940,7 +2940,7 @@ const AdminDefinition = {
                         label: t('admin.ldap.guestFilterTitle'),
                         label_default: 'Guest Filter:',
                         help_text: t('admin.ldap.guestFilterFilterDesc'),
-                        help_text_default: '(Optional) Requires Guest Access to be enabled before being applied. Enter an AD/LDAP filter to use when searching for guest objects. Only the users selected by the query will be able to access Mattermost as Guests. Guests are prevented from accessing teams or channels upon logging in until they are assigned a team and at least one channel.\n \nNote: If this filter is removed/changed, active guests will not be promoted to a member and will retain their Guest role. Guests can be promoted in **System Console > User Management**.\n \n \nExisting members that are identified by this attribute as a guest will be demoted from a member to a guest when they are asked to login next. The next login is based upon Session lengths set in **System Console > Session Lengths**. It is highly recommend to manually demote users to guests in **System Console > User Management ** to ensure access is restricted immediately.',
+                        help_text_default: '(Optional) Requires Guest Access to be enabled before being applied. Enter an AD/LDAP filter to use when searching for guest objects. Only the users selected by the query will be able to access Iconloop as Guests. Guests are prevented from accessing teams or channels upon logging in until they are assigned a team and at least one channel.\n \nNote: If this filter is removed/changed, active guests will not be promoted to a member and will retain their Guest role. Guests can be promoted in **System Console > User Management**.\n \n \nExisting members that are identified by this attribute as a guest will be demoted from a member to a guest when they are asked to login next. The next login is based upon Session lengths set in **System Console > Session Lengths**. It is highly recommend to manually demote users to guests in **System Console > User Management ** to ensure access is restricted immediately.',
                         help_text_markdown: true,
                         placeholder: t('admin.ldap.guestFilterEx'),
                         placeholder_default: 'E.g.: "(objectClass=user)"',
@@ -2972,7 +2972,7 @@ const AdminDefinition = {
                         label: t('admin.ldap.adminFilterTitle'),
                         label_default: 'Admin Filter:',
                         help_text: t('admin.ldap.adminFilterFilterDesc'),
-                        help_text_default: '(Optional) Enter an AD/LDAP filter to use for designating System Admins. The users selected by the query will have access to your Mattermost server as System Admins. By default, System Admins have complete access to the Mattermost System Console.\n \nExisting members that are identified by this attribute will be promoted from member to System Admin upon next login. The next login is based upon Session lengths set in **System Console > Session Lengths**. It is highly recommend to manually demote users to members in **System Console > User Management** to ensure access is restricted immediately.\n \nNote: If this filter is removed/changed, System Admins that were promoted via this filter will be demoted to members and will not retain access to the System Console. When this filter is not in use, System Admins can be manually promoted/demoted in **System Console > User Management**.',
+                        help_text_default: '(Optional) Enter an AD/LDAP filter to use for designating System Admins. The users selected by the query will have access to your Iconloop server as System Admins. By default, System Admins have complete access to the Iconloop System Console.\n \nExisting members that are identified by this attribute will be promoted from member to System Admin upon next login. The next login is based upon Session lengths set in **System Console > Session Lengths**. It is highly recommend to manually demote users to members in **System Console > User Management** to ensure access is restricted immediately.\n \nNote: If this filter is removed/changed, System Admins that were promoted via this filter will be demoted to members and will not retain access to the System Console. When this filter is not in use, System Admins can be manually promoted/demoted in **System Console > User Management**.',
                         help_text_markdown: true,
                         placeholder: t('admin.ldap.adminFilterEx'),
                         placeholder_default: 'E.g.: "(objectClass=user)"',
@@ -2992,7 +2992,7 @@ const AdminDefinition = {
                         label_default: 'Group Filter:',
                         help_text: t('admin.ldap.groupFilterFilterDesc'),
                         help_text_markdown: true,
-                        help_text_default: '(Optional) Enter an AD/LDAP filter to use when searching for group objects. Only the groups selected by the query will be available to Mattermost. From [User Management > Groups]({siteURL}/admin_console/user_management/groups), select which AD/LDAP groups should be linked and configured.',
+                        help_text_default: '(Optional) Enter an AD/LDAP filter to use when searching for group objects. Only the groups selected by the query will be available to Iconloop. From [User Management > Groups]({siteURL}/admin_console/user_management/groups), select which AD/LDAP groups should be linked and configured.',
                         help_text_values: {siteURL: getSiteURL()},
                         placeholder: t('admin.ldap.groupFilterEx'),
                         placeholder_default: 'E.g.: "(objectClass=group)"',
@@ -3041,7 +3041,7 @@ const AdminDefinition = {
                         placeholder: t('admin.ldap.firstnameAttrEx'),
                         placeholder_default: 'E.g.: "givenName"',
                         help_text: t('admin.ldap.firstnameAttrDesc'),
-                        help_text_default: '(Optional) The attribute in the AD/LDAP server used to populate the first name of users in Mattermost. When set, users cannot edit their first name, since it is synchronized with the LDAP server. When left blank, users can set their first name in Account Settings.',
+                        help_text_default: '(Optional) The attribute in the AD/LDAP server used to populate the first name of users in Iconloop. When set, users cannot edit their first name, since it is synchronized with the LDAP server. When left blank, users can set their first name in Account Settings.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.all(
@@ -3058,7 +3058,7 @@ const AdminDefinition = {
                         placeholder: t('admin.ldap.lastnameAttrEx'),
                         placeholder_default: 'E.g.: "sn"',
                         help_text: t('admin.ldap.lastnameAttrDesc'),
-                        help_text_default: '(Optional) The attribute in the AD/LDAP server used to populate the last name of users in Mattermost. When set, users cannot edit their last name, since it is synchronized with the LDAP server. When left blank, users can set their last name in Account Settings.',
+                        help_text_default: '(Optional) The attribute in the AD/LDAP server used to populate the last name of users in Iconloop. When set, users cannot edit their last name, since it is synchronized with the LDAP server. When left blank, users can set their last name in Account Settings.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.all(
@@ -3075,7 +3075,7 @@ const AdminDefinition = {
                         placeholder: t('admin.ldap.nicknameAttrEx'),
                         placeholder_default: 'E.g.: "nickname"',
                         help_text: t('admin.ldap.nicknameAttrDesc'),
-                        help_text_default: '(Optional) The attribute in the AD/LDAP server used to populate the nickname of users in Mattermost. When set, users cannot edit their nickname, since it is synchronized with the LDAP server. When left blank, users can set their nickname in Account Settings.',
+                        help_text_default: '(Optional) The attribute in the AD/LDAP server used to populate the nickname of users in Iconloop. When set, users cannot edit their nickname, since it is synchronized with the LDAP server. When left blank, users can set their nickname in Account Settings.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.all(
@@ -3092,7 +3092,7 @@ const AdminDefinition = {
                         placeholder: t('admin.ldap.positionAttrEx'),
                         placeholder_default: 'E.g.: "title"',
                         help_text: t('admin.ldap.positionAttrDesc'),
-                        help_text_default: '(Optional) The attribute in the AD/LDAP server used to populate the position field in Mattermost. When set, users cannot edit their position, since it is synchronized with the LDAP server. When left blank, users can set their position in Account Settings.',
+                        help_text_default: '(Optional) The attribute in the AD/LDAP server used to populate the position field in Iconloop. When set, users cannot edit their position, since it is synchronized with the LDAP server. When left blank, users can set their position in Account Settings.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.all(
@@ -3109,7 +3109,7 @@ const AdminDefinition = {
                         placeholder: t('admin.ldap.emailAttrEx'),
                         placeholder_default: 'E.g.: "mail" or "userPrincipalName"',
                         help_text: t('admin.ldap.emailAttrDesc'),
-                        help_text_default: 'The attribute in the AD/LDAP server used to populate the email address field in Mattermost.',
+                        help_text_default: 'The attribute in the AD/LDAP server used to populate the email address field in Iconloop.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.all(
@@ -3126,7 +3126,7 @@ const AdminDefinition = {
                         placeholder: t('admin.ldap.pictureAttrEx'),
                         placeholder_default: 'E.g.: "thumbnailPhoto" or "jpegPhoto"',
                         help_text: t('admin.ldap.pictureAttrDesc'),
-                        help_text_default: 'The attribute in the AD/LDAP server used to populate the profile picture in Mattermost.',
+                        help_text_default: 'The attribute in the AD/LDAP server used to populate the profile picture in Iconloop.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.all(
@@ -3143,7 +3143,7 @@ const AdminDefinition = {
                         placeholder: t('admin.ldap.usernameAttrEx'),
                         placeholder_default: 'E.g.: "sAMAccountName"',
                         help_text: t('admin.ldap.usernameAttrDesc'),
-                        help_text_default: 'The attribute in the AD/LDAP server used to populate the username field in Mattermost. This may be the same as the Login ID Attribute.',
+                        help_text_default: 'The attribute in the AD/LDAP server used to populate the username field in Iconloop. This may be the same as the Login ID Attribute.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.all(
@@ -3161,7 +3161,7 @@ const AdminDefinition = {
                         placeholder_default: 'E.g.: "objectGUID" or "uid"',
                         help_text: t('admin.ldap.idAttrDesc'),
                         help_text_markdown: true,
-                        help_text_default: 'The attribute in the AD/LDAP server used as a unique identifier in Mattermost. It should be an AD/LDAP attribute with a value that does not change such as `uid` for LDAP or `objectGUID` for Active Directory. If a user\'s ID Attribute changes, it will create a new Mattermost account unassociated with their old one.\n \nIf you need to change this field after users have already logged in, use the [mattermost ldap idmigrate](!https://about.mattermost.com/default-mattermost-ldap-idmigrate) CLI tool.',
+                        help_text_default: 'The attribute in the AD/LDAP server used as a unique identifier in Iconloop. It should be an AD/LDAP attribute with a value that does not change such as `uid` for LDAP or `objectGUID` for Active Directory. If a user\'s ID Attribute changes, it will create a new Iconloop account unassociated with their old one.\n \nIf you need to change this field after users have already logged in, use the [mattermost ldap idmigrate](!https://about.mattermost.com/default-mattermost-ldap-idmigrate) CLI tool.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.all(
@@ -3179,7 +3179,7 @@ const AdminDefinition = {
                         placeholder_default: 'E.g.: "sAMAccountName"',
                         help_text: t('admin.ldap.loginAttrDesc'),
                         help_text_markdown: true,
-                        help_text_default: 'The attribute in the AD/LDAP server used to log in to Mattermost. Normally this attribute is the same as the "Username Attribute" field above.\n \nIf your team typically uses domain/username to log in to other services with AD/LDAP, you may enter domain/username in this field to maintain consistency between sites.',
+                        help_text_default: 'The attribute in the AD/LDAP server used to log in to Iconloop. Normally this attribute is the same as the "Username Attribute" field above.\n \nIf your team typically uses domain/username to log in to other services with AD/LDAP, you may enter domain/username in this field to maintain consistency between sites.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.all(
@@ -3211,7 +3211,7 @@ const AdminDefinition = {
                         label: t('admin.ldap.syncIntervalTitle'),
                         label_default: 'Synchronization Interval (minutes):',
                         help_text: t('admin.ldap.syncIntervalHelpText'),
-                        help_text_default: 'AD/LDAP Synchronization updates Mattermost user information to reflect updates on the AD/LDAP server. For example, when a user\'s name changes on the AD/LDAP server, the change updates in Mattermost when synchronization is performed. Accounts removed from or disabled in the AD/LDAP server have their Mattermost accounts set to "Inactive" and have their account sessions revoked. Mattermost performs synchronization on the interval entered. For example, if 60 is entered, Mattermost synchronizes every 60 minutes.',
+                        help_text_default: 'AD/LDAP Synchronization updates Iconloop user information to reflect updates on the AD/LDAP server. For example, when a user\'s name changes on the AD/LDAP server, the change updates in Iconloop when synchronization is performed. Accounts removed from or disabled in the AD/LDAP server have their Iconloop accounts set to "Inactive" and have their account sessions revoked. Iconloop performs synchronization on the interval entered. For example, if 60 is entered, Iconloop synchronizes every 60 minutes.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.all(
@@ -3228,7 +3228,7 @@ const AdminDefinition = {
                         placeholder: t('admin.ldap.maxPageSizeEx'),
                         placeholder_default: 'E.g.: "2000"',
                         help_text: t('admin.ldap.maxPageSizeHelpText'),
-                        help_text_default: 'The maximum number of users the Mattermost server will request from the AD/LDAP server at one time. 0 is unlimited.',
+                        help_text_default: 'The maximum number of users the Iconloop server will request from the AD/LDAP server at one time. 0 is unlimited.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.all(
@@ -3262,7 +3262,7 @@ const AdminDefinition = {
                         label_default: 'AD/LDAP Test',
                         help_text: t('admin.ldap.testHelpText'),
                         help_text_markdown: true,
-                        help_text_default: 'Tests if the Mattermost server can connect to the AD/LDAP server specified. Please review "System Console > Logs" and [documentation](!https://mattermost.com/default-ldap-docs) to troubleshoot errors.',
+                        help_text_default: 'Tests if the Iconloop server can connect to the AD/LDAP server specified. Please review "System Console > Logs" and [documentation](!https://mattermost.com/default-ldap-docs) to troubleshoot errors.',
                         error_message: t('admin.ldap.testFailure'),
                         error_message_default: 'AD/LDAP Test Failure: {error}',
                         success_message: t('admin.ldap.testSuccess'),
@@ -3446,7 +3446,7 @@ const AdminDefinition = {
                         label: t('admin.saml.enableTitle'),
                         label_default: 'Enable Login With SAML 2.0:',
                         help_text: t('admin.saml.enableDescription'),
-                        help_text_default: 'When true, Mattermost allows login using SAML 2.0. Please see [documentation](!http://docs.mattermost.com/deployment/sso-saml.html) to learn more about configuring SAML for Mattermost.',
+                        help_text_default: 'When true, Iconloop allows login using SAML 2.0. Please see [documentation](!http://docs.mattermost.com/deployment/sso-saml.html) to learn more about configuring SAML for Iconloop.',
                         help_text_markdown: true,
                         isDisabled: it.not(it.userHasWritePermissionOnResource('authentication')),
                     },
@@ -3456,7 +3456,7 @@ const AdminDefinition = {
                         label: t('admin.saml.enableSyncWithLdapTitle'),
                         label_default: 'Enable Synchronizing SAML Accounts With AD/LDAP:',
                         help_text: t('admin.saml.enableSyncWithLdapDescription'),
-                        help_text_default: 'When true, Mattermost periodically synchronizes SAML user attributes, including user deactivation and removal, from AD/LDAP. Enable and configure synchronization settings at **Authentication > AD/LDAP**. When false, user attributes are updated from SAML during user login. See [documentation](!https://about.mattermost.com/default-saml-ldap-sync) to learn more.',
+                        help_text_default: 'When true, Iconloop periodically synchronizes SAML user attributes, including user deactivation and removal, from AD/LDAP. Enable and configure synchronization settings at **Authentication > AD/LDAP**. When false, user attributes are updated from SAML during user login. See [documentation](!https://about.mattermost.com/default-saml-ldap-sync) to learn more.',
                         help_text_markdown: true,
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
@@ -3469,7 +3469,7 @@ const AdminDefinition = {
                         label: t('admin.saml.ignoreGuestsLdapSyncTitle'),
                         label_default: 'Ignore Guest Users when  Synchronizing with AD/LDAP',
                         help_text: t('admin.saml.ignoreGuestsLdapSyncDesc'),
-                        help_text_default: 'When true, Mattermost will ignore Guest Users who are identified by the Guest Attribute, when synchronizing with AD/LDAP for user deactivation and removal and Guest deactivation will need to be managed manually via System Console > Users.',
+                        help_text_default: 'When true, Iconloop will ignore Guest Users who are identified by the Guest Attribute, when synchronizing with AD/LDAP for user deactivation and removal and Guest deactivation will need to be managed manually via System Console > Users.',
                         isDisabled: it.any(
                             it.configIsFalse('GuestAccountsSettings', 'Enable'),
                             it.stateIsFalse('SamlSettings.EnableSyncWithLdap'),
@@ -3482,7 +3482,7 @@ const AdminDefinition = {
                         label: t('admin.saml.enableSyncWithLdapIncludeAuthTitle'),
                         label_default: 'Override SAML bind data with AD/LDAP information:',
                         help_text: t('admin.saml.enableSyncWithLdapIncludeAuthDescription'),
-                        help_text_default: 'When true, Mattermost will override the SAML ID attribute with the AD/LDAP ID attribute if configured or override the SAML Email attribute with the AD/LDAP Email attribute if SAML ID attribute is not present.  This will allow you automatically migrate users from Email binding to ID binding to prevent creation of new users when an email address changes for a user. Moving from true to false, will remove the override from happening.\n \n**Note:** SAML IDs must match the LDAP IDs to prevent disabling of user accounts.  Please review [documentation](!https://docs.mattermost.com/deployment/sso-saml-ldapsync.html) for more information.',
+                        help_text_default: 'When true, Iconloop will override the SAML ID attribute with the AD/LDAP ID attribute if configured or override the SAML Email attribute with the AD/LDAP Email attribute if SAML ID attribute is not present.  This will allow you automatically migrate users from Email binding to ID binding to prevent creation of new users when an email address changes for a user. Moving from true to false, will remove the override from happening.\n \n**Note:** SAML IDs must match the LDAP IDs to prevent disabling of user accounts.  Please review [documentation](!https://docs.mattermost.com/deployment/sso-saml-ldapsync.html) for more information.',
                         help_text_markdown: true,
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
@@ -3529,7 +3529,7 @@ const AdminDefinition = {
                         label: t('admin.saml.idpUrlTitle'),
                         label_default: 'SAML SSO URL:',
                         help_text: t('admin.saml.idpUrlDesc'),
-                        help_text_default: 'The URL where Mattermost sends a SAML request to start login sequence.',
+                        help_text_default: 'The URL where Iconloop sends a SAML request to start login sequence.',
                         placeholder: t('admin.saml.idpUrlEx'),
                         placeholder_default: 'E.g.: "https://idp.example.org/SAML2/SSO/Login"',
                         setFromMetadataField: 'idp_url',
@@ -3584,7 +3584,7 @@ const AdminDefinition = {
                         label: t('admin.saml.verifyTitle'),
                         label_default: 'Verify Signature:',
                         help_text: t('admin.saml.verifyDescription'),
-                        help_text_default: 'When false, Mattermost will not verify that the signature sent from a SAML Response matches the Service Provider Login URL. Disabling verification is not recommended for production environments.',
+                        help_text_default: 'When false, Iconloop will not verify that the signature sent from a SAML Response matches the Service Provider Login URL. Disabling verification is not recommended for production environments.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.stateIsFalse('SamlSettings.Enable'),
@@ -3630,7 +3630,7 @@ const AdminDefinition = {
                         label: t('admin.saml.encryptTitle'),
                         label_default: 'Enable Encryption:',
                         help_text: t('admin.saml.encryptDescription'),
-                        help_text_default: 'When false, Mattermost will not decrypt SAML Assertions encrypted with your Service Provider Public Certificate. Disabling encryption is not recommended for production environments.',
+                        help_text_default: 'When false, Iconloop will not decrypt SAML Assertions encrypted with your Service Provider Public Certificate. Disabling encryption is not recommended for production environments.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.stateIsFalse('SamlSettings.Enable'),
@@ -3666,9 +3666,9 @@ const AdminDefinition = {
                         label: t('admin.saml.publicCertificateFileTitle'),
                         label_default: 'Service Provider Public Certificate:',
                         help_text: t('admin.saml.publicCertificateFileDesc'),
-                        help_text_default: 'The certificate used to generate the signature on a SAML request to the Identity Provider for a service provider initiated SAML login, when Mattermost is the Service Provider.',
+                        help_text_default: 'The certificate used to generate the signature on a SAML request to the Identity Provider for a service provider initiated SAML login, when Iconloop is the Service Provider.',
                         remove_help_text: t('admin.saml.publicCertificateFileRemoveDesc'),
-                        remove_help_text_default: 'Remove the certificate used to generate the signature on a SAML request to the Identity Provider for a service provider initiated SAML login, when Mattermost is the Service Provider.',
+                        remove_help_text_default: 'Remove the certificate used to generate the signature on a SAML request to the Identity Provider for a service provider initiated SAML login, when Iconloop is the Service Provider.',
                         remove_button_text: t('admin.saml.remove.sp_certificate'),
                         remove_button_text_default: 'Remove Service Provider Certificate',
                         removing_text: t('admin.saml.removing.certificate'),
@@ -3690,7 +3690,7 @@ const AdminDefinition = {
                         label: t('admin.saml.signRequestTitle'),
                         label_default: 'Sign Request:',
                         help_text: t('admin.saml.signRequestDescription'),
-                        help_text_default: 'When true, Mattermost will sign the SAML request using your private key. When false, Mattermost will not sign the SAML request.',
+                        help_text_default: 'When true, Iconloop will sign the SAML request using your private key. When false, Iconloop will not sign the SAML request.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.stateIsFalse('SamlSettings.Encrypt'),
@@ -3767,7 +3767,7 @@ const AdminDefinition = {
                         placeholder: t('admin.saml.emailAttrEx'),
                         placeholder_default: 'E.g.: "Email" or "PrimaryEmail"',
                         help_text: t('admin.saml.emailAttrDesc'),
-                        help_text_default: 'The attribute in the SAML Assertion that will be used to populate the email addresses of users in Mattermost.',
+                        help_text_default: 'The attribute in the SAML Assertion that will be used to populate the email addresses of users in Iconloop.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.stateIsFalse('SamlSettings.Enable'),
@@ -3781,7 +3781,7 @@ const AdminDefinition = {
                         placeholder: t('admin.saml.usernameAttrEx'),
                         placeholder_default: 'E.g.: "Username"',
                         help_text: t('admin.saml.usernameAttrDesc'),
-                        help_text_default: 'The attribute in the SAML Assertion that will be used to populate the username field in Mattermost.',
+                        help_text_default: 'The attribute in the SAML Assertion that will be used to populate the username field in Iconloop.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.stateIsFalse('SamlSettings.Enable'),
@@ -3795,7 +3795,7 @@ const AdminDefinition = {
                         placeholder: t('admin.saml.idAttrEx'),
                         placeholder_default: 'E.g.: "Id"',
                         help_text: t('admin.saml.idAttrDesc'),
-                        help_text_default: '(Optional) The attribute in the SAML Assertion that will be used to bind users from SAML to users in Mattermost.',
+                        help_text_default: '(Optional) The attribute in the SAML Assertion that will be used to bind users from SAML to users in Iconloop.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.stateIsFalse('SamlSettings.Enable'),
@@ -3809,7 +3809,7 @@ const AdminDefinition = {
                         placeholder: t('admin.saml.guestAttrEx'),
                         placeholder_default: 'E.g.: "usertype=Guest" or "isGuest=true"',
                         help_text: t('admin.saml.guestAttrDesc'),
-                        help_text_default: '(Optional) Requires Guest Access to be enabled before being applied. The attribute in the SAML Assertion that will be used to apply a guest role to users in Mattermost. Guests are prevented from accessing teams or channels upon logging in until they are assigned a team and at least one channel.\n \nNote: If this attribute is removed/changed from your guest user in SAML and the user is still active, they will not be promoted to a member and will retain their Guest role. Guests can be promoted in **System Console > User Management**.\n \n \nExisting members that are identified by this attribute as a guest will be demoted from a member to a guest when they are asked to login next. The next login is based upon Session lengths set in **System Console > Session Lengths**. It is highly recommend to manually demote users to guests in **System Console > User Management ** to ensure access is restricted immediately.',
+                        help_text_default: '(Optional) Requires Guest Access to be enabled before being applied. The attribute in the SAML Assertion that will be used to apply a guest role to users in Iconloop. Guests are prevented from accessing teams or channels upon logging in until they are assigned a team and at least one channel.\n \nNote: If this attribute is removed/changed from your guest user in SAML and the user is still active, they will not be promoted to a member and will retain their Guest role. Guests can be promoted in **System Console > User Management**.\n \n \nExisting members that are identified by this attribute as a guest will be demoted from a member to a guest when they are asked to login next. The next login is based upon Session lengths set in **System Console > Session Lengths**. It is highly recommend to manually demote users to guests in **System Console > User Management ** to ensure access is restricted immediately.',
                         help_text_markdown: true,
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
@@ -3835,7 +3835,7 @@ const AdminDefinition = {
                         placeholder: t('admin.saml.adminAttrEx'),
                         placeholder_default: 'E.g.: "usertype=Admin" or "isAdmin=true"',
                         help_text: t('admin.saml.adminAttrDesc'),
-                        help_text_default: '(Optional) The attribute in the SAML Assertion for designating System Admins. The users selected by the query will have access to your Mattermost server as System Admins. By default, System Admins have complete access to the Mattermost System Console.\n \nExisting members that are identified by this attribute will be promoted from member to System Admin upon next login. The next login is based upon Session lengths set in **System Console > Session Lengths.** It is highly recommend to manually demote users to members in **System Console > User Management** to ensure access is restricted immediately.\n \nNote: If this filter is removed/changed, System Admins that were promoted via this filter will be demoted to members and will not retain access to the System Console. When this filter is not in use, System Admins can be manually promoted/demoted in **System Console > User Management**.',
+                        help_text_default: '(Optional) The attribute in the SAML Assertion for designating System Admins. The users selected by the query will have access to your Iconloop server as System Admins. By default, System Admins have complete access to the Iconloop System Console.\n \nExisting members that are identified by this attribute will be promoted from member to System Admin upon next login. The next login is based upon Session lengths set in **System Console > Session Lengths.** It is highly recommend to manually demote users to members in **System Console > User Management** to ensure access is restricted immediately.\n \nNote: If this filter is removed/changed, System Admins that were promoted via this filter will be demoted to members and will not retain access to the System Console. When this filter is not in use, System Admins can be manually promoted/demoted in **System Console > User Management**.',
                         help_text_markdown: true,
                         isDisabled: it.any(
                             it.not(it.isSystemAdmin),
@@ -3851,7 +3851,7 @@ const AdminDefinition = {
                         placeholder: t('admin.saml.firstnameAttrEx'),
                         placeholder_default: 'E.g.: "FirstName"',
                         help_text: t('admin.saml.firstnameAttrDesc'),
-                        help_text_default: '(Optional) The attribute in the SAML Assertion that will be used to populate the first name of users in Mattermost.',
+                        help_text_default: '(Optional) The attribute in the SAML Assertion that will be used to populate the first name of users in Iconloop.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.stateIsFalse('SamlSettings.Enable'),
@@ -3865,7 +3865,7 @@ const AdminDefinition = {
                         placeholder: t('admin.saml.lastnameAttrEx'),
                         placeholder_default: 'E.g.: "LastName"',
                         help_text: t('admin.saml.lastnameAttrDesc'),
-                        help_text_default: '(Optional) The attribute in the SAML Assertion that will be used to populate the last name of users in Mattermost.',
+                        help_text_default: '(Optional) The attribute in the SAML Assertion that will be used to populate the last name of users in Iconloop.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.stateIsFalse('SamlSettings.Enable'),
@@ -3879,7 +3879,7 @@ const AdminDefinition = {
                         placeholder: t('admin.saml.nicknameAttrEx'),
                         placeholder_default: 'E.g.: "Nickname"',
                         help_text: t('admin.saml.nicknameAttrDesc'),
-                        help_text_default: '(Optional) The attribute in the SAML Assertion that will be used to populate the nickname of users in Mattermost.',
+                        help_text_default: '(Optional) The attribute in the SAML Assertion that will be used to populate the nickname of users in Iconloop.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.stateIsFalse('SamlSettings.Enable'),
@@ -3893,7 +3893,7 @@ const AdminDefinition = {
                         placeholder: t('admin.saml.positionAttrEx'),
                         placeholder_default: 'E.g.: "Role"',
                         help_text: t('admin.saml.positionAttrDesc'),
-                        help_text_default: '(Optional) The attribute in the SAML Assertion that will be used to populate the position of users in Mattermost.',
+                        help_text_default: '(Optional) The attribute in the SAML Assertion that will be used to populate the position of users in Iconloop.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.stateIsFalse('SamlSettings.Enable'),
@@ -3907,7 +3907,7 @@ const AdminDefinition = {
                         placeholder: t('admin.saml.localeAttrEx'),
                         placeholder_default: 'E.g.: "Locale" or "PrimaryLanguage"',
                         help_text: t('admin.saml.localeAttrDesc'),
-                        help_text_default: '(Optional) The attribute in the SAML Assertion that will be used to populate the language of users in Mattermost.',
+                        help_text_default: '(Optional) The attribute in the SAML Assertion that will be used to populate the language of users in Iconloop.',
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('authentication')),
                             it.stateIsFalse('SamlSettings.Enable'),
@@ -3978,7 +3978,7 @@ const AdminDefinition = {
                         label: t('admin.gitlab.enableTitle'),
                         label_default: 'Enable authentication with GitLab: ',
                         help_text: t('admin.gitlab.enableDescription'),
-                        help_text_default: "When true, Mattermost allows team creation and account signup using GitLab OAuth.\n \n1. Log in to your GitLab account and go to Profile Settings -> Applications.\n2. Enter Redirect URIs \"'<your-mattermost-url>'/login/gitlab/complete\" (example: http://localhost:8065/login/gitlab/complete) and \"<your-mattermost-url>/signup/gitlab/complete\".\n3. Then use \"Application Secret Key\" and \"Application ID\" fields from GitLab to complete the options below.\n4. Complete the Endpoint URLs below.",
+                        help_text_default: "When true, Iconloop allows team creation and account signup using GitLab OAuth.\n \n1. Log in to your GitLab account and go to Profile Settings -> Applications.\n2. Enter Redirect URIs \"'<your-mattermost-url>'/login/gitlab/complete\" (example: http://localhost:8065/login/gitlab/complete) and \"<your-mattermost-url>/signup/gitlab/complete\".\n3. Then use \"Application Secret Key\" and \"Application ID\" fields from GitLab to complete the options below.\n4. Complete the Endpoint URLs below.",
                         help_text_markdown: true,
                         isDisabled: it.not(it.userHasWritePermissionOnResource('authentication')),
                     },
@@ -4167,7 +4167,7 @@ const AdminDefinition = {
                                 display_name_default: 'Google Apps',
                                 isHidden: it.not(it.licensedForFeature('GoogleOAuth')),
                                 help_text: t('admin.google.EnableMarkdownDesc'),
-                                help_text_default: '1. [Log in](!https://accounts.google.com/login) to your Google account.\n2. Go to [https://console.developers.google.com](!https://console.developers.google.com), click **Credentials** in the left hand sidebar and enter "Mattermost - your-company-name" as the **Project Name**, then click **Create**.\n3. Click the **OAuth consent screen** header and enter "Mattermost" as the **Product name shown to users**, then click **Save**.\n4. Under the **Credentials** header, click **Create credentials**, choose **OAuth client ID** and select **Web Application**.\n5. Under **Restrictions** and **Authorized redirect URIs** enter **your-mattermost-url/signup/google/complete** (example: http://localhost:8065/signup/google/complete). Click **Create**.\n6. Paste the **Client ID** and **Client Secret** to the fields below, then click **Save**.\n7. Go to the [Google People API](!https://console.developers.google.com/apis/library/people.googleapis.com) and click *Enable*.',
+                                help_text_default: '1. [Log in](!https://accounts.google.com/login) to your Google account.\n2. Go to [https://console.developers.google.com](!https://console.developers.google.com), click **Credentials** in the left hand sidebar and enter "Iconloop - your-company-name" as the **Project Name**, then click **Create**.\n3. Click the **OAuth consent screen** header and enter "Iconloop" as the **Product name shown to users**, then click **Save**.\n4. Under the **Credentials** header, click **Create credentials**, choose **OAuth client ID** and select **Web Application**.\n5. Under **Restrictions** and **Authorized redirect URIs** enter **your-mattermost-url/signup/google/complete** (example: http://localhost:8065/signup/google/complete). Click **Create**.\n6. Paste the **Client ID** and **Client Secret** to the fields below, then click **Save**.\n7. Go to the [Google People API](!https://console.developers.google.com/apis/library/people.googleapis.com) and click *Enable*.',
                                 help_text_markdown: true,
                             },
                             {
@@ -4176,7 +4176,7 @@ const AdminDefinition = {
                                 display_name_default: 'Office 365',
                                 isHidden: it.not(it.licensedForFeature('Office365OAuth')),
                                 help_text: t('admin.office365.EnableMarkdownDesc'),
-                                help_text_default: '1. [Log in](!https://login.microsoftonline.com/) to your Microsoft or Office 365 account. Make sure it`s the account on the same [tenant](!https://msdn.microsoft.com/en-us/library/azure/jj573650.aspx#Anchor_0) that you would like users to log in with.\n2. Go to [https://apps.dev.microsoft.com](!https://apps.dev.microsoft.com), click **Go to app list** > **Add an app** and use "Mattermost - your-company-name" as the **Application Name**.\n3. Under **Application Secrets**, click **Generate New Password** and paste it to the **Application Secret Password** field below.\n4. Under **Platforms**, click **Add Platform**, choose **Web** and enter **your-mattermost-url/signup/office365/complete** (example: http://localhost:8065/signup/office365/complete) under **Redirect URIs**. Also uncheck **Allow Implicit Flow**.\n5. Finally, click **Save** and then paste the **Application ID** below.',
+                                help_text_default: '1. [Log in](!https://login.microsoftonline.com/) to your Microsoft or Office 365 account. Make sure it`s the account on the same [tenant](!https://msdn.microsoft.com/en-us/library/azure/jj573650.aspx#Anchor_0) that you would like users to log in with.\n2. Go to [https://apps.dev.microsoft.com](!https://apps.dev.microsoft.com), click **Go to app list** > **Add an app** and use "Iconloop - your-company-name" as the **Application Name**.\n3. Under **Application Secrets**, click **Generate New Password** and paste it to the **Application Secret Password** field below.\n4. Under **Platforms**, click **Add Platform**, choose **Web** and enter **your-mattermost-url/signup/office365/complete** (example: http://localhost:8065/signup/office365/complete) under **Redirect URIs**. Also uncheck **Allow Implicit Flow**.\n5. Finally, click **Save** and then paste the **Application ID** below.',
                                 help_text_markdown: true,
                             },
                         ],
@@ -4486,7 +4486,7 @@ const AdminDefinition = {
                                 display_name: t('admin.openid.google'),
                                 display_name_default: 'Google Apps',
                                 help_text: t('admin.google.EnableMarkdownDesc'),
-                                help_text_default: '1. [Log in](!https://accounts.google.com/login) to your Google account.\n2. Go to [https://console.developers.google.com](!https://console.developers.google.com), click **Credentials** in the left hand side.\n 3. Under the **Credentials** header, click **Create credentials**, choose **OAuth client ID** and select **Web Application**.\n 4. Enter "Mattermost - your-company-name" as the **Name**.\n 5. Under **Authorized redirect URIs** enter **your-mattermost-url/signup/google/complete** (example: http://localhost:8065/signup/google/complete). Click **Create**.\n 6. Paste the **Client ID** and **Client Secret** to the fields below, then click **Save**.\n 7. Go to the [Google People API](!https://console.developers.google.com/apis/library/people.googleapis.com) and click *Enable*.',
+                                help_text_default: '1. [Log in](!https://accounts.google.com/login) to your Google account.\n2. Go to [https://console.developers.google.com](!https://console.developers.google.com), click **Credentials** in the left hand side.\n 3. Under the **Credentials** header, click **Create credentials**, choose **OAuth client ID** and select **Web Application**.\n 4. Enter "Iconloop - your-company-name" as the **Name**.\n 5. Under **Authorized redirect URIs** enter **your-mattermost-url/signup/google/complete** (example: http://localhost:8065/signup/google/complete). Click **Create**.\n 6. Paste the **Client ID** and **Client Secret** to the fields below, then click **Save**.\n 7. Go to the [Google People API](!https://console.developers.google.com/apis/library/people.googleapis.com) and click *Enable*.',
                                 help_text_markdown: true,
                             },
                             {
@@ -4494,7 +4494,7 @@ const AdminDefinition = {
                                 display_name: t('admin.openid.office365'),
                                 display_name_default: 'Office 365',
                                 help_text: t('admin.office365.EnableMarkdownDesc'),
-                                help_text_default: '1. [Log in](!https://login.microsoftonline.com/) to your Microsoft or Office 365 account. Make sure it`s the account on the same [tenant](!https://msdn.microsoft.com/en-us/library/azure/jj573650.aspx#Anchor_0) that you would like users to log in with.\n2. Go to [https://apps.dev.microsoft.com](!https://apps.dev.microsoft.com), click **Go to Azure Portal** > click **New Registration**.\n3. Use "Mattermost - your-company-name" as the **Application Name**, click **Registration**, paste **Client ID** and **Tenant ID** below.\n4. Click **Authentication**, under **Platforms**, click **Add Platform**, choose **Web** and enter **your-mattermost-url/signup/office365/complete** (example: http://localhost:8065/signup/office365/complete) under **Redirect URIs**. Also uncheck **Allow Implicit Flow**.\n5. Click **Certificates & secrets**, Generate **New client secret** and paste secret value in **Client Secret** field below.',
+                                help_text_default: '1. [Log in](!https://login.microsoftonline.com/) to your Microsoft or Office 365 account. Make sure it`s the account on the same [tenant](!https://msdn.microsoft.com/en-us/library/azure/jj573650.aspx#Anchor_0) that you would like users to log in with.\n2. Go to [https://apps.dev.microsoft.com](!https://apps.dev.microsoft.com), click **Go to Azure Portal** > click **New Registration**.\n3. Use "Iconloop - your-company-name" as the **Application Name**, click **Registration**, paste **Client ID** and **Tenant ID** below.\n4. Click **Authentication**, under **Platforms**, click **Add Platform**, choose **Web** and enter **your-mattermost-url/signup/office365/complete** (example: http://localhost:8065/signup/office365/complete) under **Redirect URIs**. Also uncheck **Allow Implicit Flow**.\n5. Click **Certificates & secrets**, Generate **New client secret** and paste secret value in **Client Secret** field below.',
                                 help_text_markdown: true,
                             },
                             {
@@ -4770,7 +4770,7 @@ const AdminDefinition = {
                         label: t('admin.guest_access.mfaTitle'),
                         label_default: 'Enforce Multi-factor Authentication: ',
                         help_text: t('admin.guest_access.mfaDescription'),
-                        help_text_default: 'When true, [multi-factor authentication](!https://docs.mattermost.com/deployment/auth.html) for guests is required for login. New guest users will be required to configure MFA on signup. Logged in guest users without MFA configured are redirected to the MFA setup page until configuration is complete.\n \nIf your system has guest users with login methods other than AD/LDAP and email, MFA must be enforced with the authentication provider outside of Mattermost.',
+                        help_text_default: 'When true, [multi-factor authentication](!https://docs.mattermost.com/deployment/auth.html) for guests is required for login. New guest users will be required to configure MFA on signup. Logged in guest users without MFA configured are redirected to the MFA setup page until configuration is complete.\n \nIf your system has guest users with login methods other than AD/LDAP and email, MFA must be enforced with the authentication provider outside of Iconloop.',
                         help_text_markdown: true,
                         isHidden: it.any(
                             it.configIsFalse('ServiceSettings', 'EnableMultifactorAuthentication'),
@@ -4876,7 +4876,7 @@ const AdminDefinition = {
                         label: t('admin.oauth.providerTitle'),
                         label_default: 'Enable OAuth 2.0 Service Provider: ',
                         help_text: t('admin.oauth.providerDescription'),
-                        help_text_default: 'When true, Mattermost can act as an OAuth 2.0 service provider allowing Mattermost to authorize API requests from external applications. See [documentation](!https://docs.mattermost.com/developer/oauth-2-0-applications.html) to learn more.',
+                        help_text_default: 'When true, Iconloop can act as an OAuth 2.0 service provider allowing Iconloop to authorize API requests from external applications. See [documentation](!https://docs.mattermost.com/developer/oauth-2-0-applications.html) to learn more.',
                         help_text_markdown: true,
                         isDisabled: it.not(it.userHasWritePermissionOnResource('integrations')),
                     },
@@ -5143,7 +5143,7 @@ const AdminDefinition = {
                         label: t('admin.compliance.enableTitle'),
                         label_default: 'Enable Compliance Reporting:',
                         help_text: t('admin.compliance.enableDesc'),
-                        help_text_default: 'When true, Mattermost allows compliance reporting from the **Compliance and Auditing** tab. See [documentation](!https://docs.mattermost.com/administration/compliance.html) to learn more.',
+                        help_text_default: 'When true, Iconloop allows compliance reporting from the **Compliance and Auditing** tab. See [documentation](!https://docs.mattermost.com/administration/compliance.html) to learn more.',
                         help_text_markdown: true,
                         isHidden: it.not(it.licensedForFeature('Compliance')),
                         isDisabled: it.not(it.userHasWritePermissionOnResource('compliance')),
@@ -5169,7 +5169,7 @@ const AdminDefinition = {
                         label: t('admin.compliance.enableDailyTitle'),
                         label_default: 'Enable Daily Report:',
                         help_text: t('admin.compliance.enableDailyDesc'),
-                        help_text_default: 'When true, Mattermost will generate a daily compliance report.',
+                        help_text_default: 'When true, Iconloop will generate a daily compliance report.',
                         isHidden: it.not(it.licensedForFeature('Compliance')),
                         isDisabled: it.any(
                             it.not(it.userHasWritePermissionOnResource('compliance')),
@@ -5360,7 +5360,7 @@ const AdminDefinition = {
                         label: t('admin.experimental.clientSideCertEnable.title'),
                         label_default: 'Enable Client-Side Certification:',
                         help_text: t('admin.experimental.clientSideCertEnable.desc'),
-                        help_text_default: 'Enables client-side certification for your Mattermost server. See [documentation](!https://docs.mattermost.com/deployment/certificate-based-authentication.html) to learn more.',
+                        help_text_default: 'Enables client-side certification for your Iconloop server. See [documentation](!https://docs.mattermost.com/deployment/certificate-based-authentication.html) to learn more.',
                         help_text_markdown: true,
                         isHidden: it.not(it.licensedForFeature('SAML')),
                         isDisabled: it.not(it.userHasWritePermissionOnResource('experimental')),
@@ -5407,7 +5407,7 @@ const AdminDefinition = {
                         label: t('admin.experimental.experimentalEnableHardenedMode.title'),
                         label_default: 'Enable Hardened Mode:',
                         help_text: t('admin.experimental.experimentalEnableHardenedMode.desc'),
-                        help_text_default: 'Enables a hardened mode for Mattermost that makes user experience trade-offs in the interest of security. See [documentation](!https://docs.mattermost.com/administration/config-settings.html#enable-hardened-mode-experimental) to learn more.',
+                        help_text_default: 'Enables a hardened mode for Iconloop that makes user experience trade-offs in the interest of security. See [documentation](!https://docs.mattermost.com/administration/config-settings.html#enable-hardened-mode-experimental) to learn more.',
                         help_text_markdown: true,
                         isDisabled: it.not(it.userHasWritePermissionOnResource('experimental')),
                     },
@@ -5471,8 +5471,8 @@ const AdminDefinition = {
                         options: [
                             {
                                 value: 'default',
-                                display_name: 'Mattermost',
-                                display_name_default: 'Mattermost',
+                                display_name: 'Iconloop',
+                                display_name_default: 'Iconloop',
                             },
                             {
                                 value: 'organization',
@@ -5481,8 +5481,8 @@ const AdminDefinition = {
                             },
                             {
                                 value: 'mattermostDark',
-                                display_name: 'Mattermost Dark',
-                                display_name_default: 'Mattermost Dark',
+                                display_name: 'Iconloop Dark',
+                                display_name_default: 'Iconloop Dark',
                             },
                             {
                                 value: 'windows10',
@@ -5499,7 +5499,7 @@ const AdminDefinition = {
                         label: t('admin.experimental.enableTutorial.title'),
                         label_default: 'Enable Tutorial:',
                         help_text: t('admin.experimental.enableTutorial.desc'),
-                        help_text_default: 'When true, users are prompted with a tutorial when they open Mattermost for the first time after account creation. When false, the tutorial is disabled, and users are placed in Town Square when they open Mattermost for the first time after account creation.',
+                        help_text_default: 'When true, users are prompted with a tutorial when they open Iconloop for the first time after account creation. When false, the tutorial is disabled, and users are placed in Town Square when they open Iconloop for the first time after account creation.',
                         help_text_markdown: false,
                         isDisabled: it.not(it.userHasWritePermissionOnResource('experimental')),
                     },
@@ -5689,7 +5689,7 @@ const AdminDefinition = {
                         label: t('admin.experimental.userStatusAwayTimeout.title'),
                         label_default: 'User Status Away Timeout:',
                         help_text: t('admin.experimental.userStatusAwayTimeout.desc'),
-                        help_text_default: 'This setting defines the number of seconds after which the user’s status indicator changes to "Away", when they are away from Mattermost.',
+                        help_text_default: 'This setting defines the number of seconds after which the user’s status indicator changes to "Away", when they are away from Iconloop.',
                         help_text_markdown: false,
                         placeholder: t('admin.experimental.userStatusAwayTimeout.example'),
                         placeholder_default: 'E.g.: "300"',

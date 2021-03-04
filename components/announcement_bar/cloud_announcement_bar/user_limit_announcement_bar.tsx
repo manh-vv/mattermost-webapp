@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -162,8 +162,8 @@ class UserLimitAnnouncementBar extends React.PureComponent<Props> {
                 showCloseButton={dismissable}
                 handleClose={this.handleClose}
                 onButtonClick={this.showModal}
-                modalButtonText={t('admin.billing.subscription.upgradeMattermostCloud.upgradeButton')}
-                modalButtonDefaultText={'Upgrade Mattermost Cloud'}
+                modalButtonText={t('admin.billing.subscription.upgradeIconloopCloud.upgradeButton')}
+                modalButtonDefaultText={'Upgrade Iconloop Cloud'}
                 message={dismissable ? t('upgrade.cloud_banner_reached') : t('upgrade.cloud_banner_over')}
                 showLinkAsButton={true}
             />

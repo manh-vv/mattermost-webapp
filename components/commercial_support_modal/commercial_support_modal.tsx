@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -86,7 +86,7 @@ export default class CommercialSupportModal extends React.PureComponent<Props, S
                     <div className='CommercialSupportModal'>
                         <FormattedMarkdownMessage
                             id='commercial_support.description'
-                            defaultMessage={'If you\'re experiencing issues, [submit a support ticket.](!https://support.mattermost.com/hc/en-us/requests/new)\n \n**Download Support Packet**\n \nWe recommend that you download additional environment details about your Mattermost environment to help with troubleshooting. Once downloaded, attach the packet to your support ticket to share with our Customer Support team.'}
+                            defaultMessage={'If you\'re experiencing issues, [submit a support ticket.](!https://support.mattermost.com/hc/en-us/requests/new)\n \n**Download Support Packet**\n \nWe recommend that you download additional environment details about your Iconloop environment to help with troubleshooting. Once downloaded, attach the packet to your support ticket to share with our Customer Support team.'}
                         />
                         <a
                             className='btn btn-primary DownloadSupportPacket'

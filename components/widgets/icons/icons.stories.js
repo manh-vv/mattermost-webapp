@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -53,7 +53,7 @@ import LinkIcon from './link_icon';
 import LockIcon from './lock_icon';
 import MailIcon from './mail_icon';
 import MailPlusIcon from './mail_plus_icon';
-import MattermostLogo from './mattermost_logo';
+import IconloopLogo from './mattermost_logo';
 import MemberIcon from './member_icon';
 import MentionsIcon from './mentions_icon';
 import MenuIcon from './menu_icon';
@@ -84,7 +84,7 @@ const icons = [
     FlagIconFilled, FlagIcon, GfycatIcon, GifReactionsIcon,
     GifSearchClearIcon, GifSearchIcon, GifTrendingIcon, GlobeIcon, InfoIcon,
     InfoSmallIcon, InviteIcon, LeaveTeamIcon, LinkIcon, LockIcon, MailIcon,
-    MailPlusIcon, MattermostLogo, MemberIcon, MentionsIcon, MenuIcon,
+    MailPlusIcon, IconloopLogo, MemberIcon, MentionsIcon, MenuIcon,
     MessageIcon, PinIcon, ReplyIcon, ScrollToBottomIcon, SearchIcon, ShieldOutlineIcon,
     StatusAwayAvatarIcon, StatusAwayIcon, StatusDndAvatarIcon, StatusDndIcon,
     StatusOfflineAvatarIcon, StatusOfflineIcon, StatusOnlineAvatarIcon,

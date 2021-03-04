@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 /* eslint-disable react/no-string-refs */
 
@@ -105,7 +105,7 @@ class TeamImportTab extends React.PureComponent {
                 <p>
                     <FormattedMessage
                         id='team_import_tab.importHelpLine1'
-                        defaultMessage="Slack import to Mattermost supports importing of messages in your Slack team's public channels."
+                        defaultMessage="Slack import to Iconloop supports importing of messages in your Slack team's public channels."
                     />
                 </p>
                 <p>
@@ -170,7 +170,7 @@ class TeamImportTab extends React.PureComponent {
                     />
                     <a
                         href={this.state.link}
-                        download='MattermostImportSummary.txt'
+                        download='IconloopImportSummary.txt'
                     >
                         <FormattedMessage
                             id='team_import_tab.summary'
@@ -190,7 +190,7 @@ class TeamImportTab extends React.PureComponent {
                     />
                     <a
                         href={this.state.link}
-                        download='MattermostImportSummary.txt'
+                        download='IconloopImportSummary.txt'
                     >
                         <FormattedMessage
                             id='team_import_tab.summary'

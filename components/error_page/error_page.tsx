@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import crypto from 'crypto';
@@ -63,7 +63,7 @@ export default class ErrorPage extends React.PureComponent<Props> {
                 <Link to={returnTo}>
                     <FormattedMessage
                         id='error.generic.link'
-                        defaultMessage='Back to Mattermost'
+                        defaultMessage='Back to Iconloop'
                     />
                 </Link>
             );

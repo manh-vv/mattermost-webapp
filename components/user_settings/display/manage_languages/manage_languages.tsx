@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -218,7 +218,7 @@ export default class ManageLanguage extends React.PureComponent<Props, State> {
                     <br/>
                     <FormattedMarkdownMessage
                         id='user.settings.languages.promote'
-                        defaultMessage='Select which language Mattermost displays in the user interface.\n \nWould you like to help with translations? Join the [Mattermost Translation Server](!http://translate.mattermost.com/) to contribute.'
+                        defaultMessage='Select which language Iconloop displays in the user interface.\n \nWould you like to help with translations? Join the [Iconloop Translation Server](!http://translate.mattermost.com/) to contribute.'
                     />
                 </div>
             </div>

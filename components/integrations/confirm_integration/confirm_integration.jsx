@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
@@ -72,7 +72,7 @@ export default class ConfirmIntegration extends React.PureComponent {
                 <p>
                     <FormattedMarkdownMessage
                         id='add_command.doneHelp'
-                        defaultMessage='Your slash command is set up. The following token will be sent in the outgoing payload. Please use it to verify the request came from your Mattermost team (details at [Slash Commands](!https://docs.mattermost.com/developer/slash-commands.html)).'
+                        defaultMessage='Your slash command is set up. The following token will be sent in the outgoing payload. Please use it to verify the request came from your Iconloop team (details at [Slash Commands](!https://docs.mattermost.com/developer/slash-commands.html)).'
                     />
                 </p>
             );
@@ -134,7 +134,7 @@ export default class ConfirmIntegration extends React.PureComponent {
                 <p>
                     <FormattedMarkdownMessage
                         id='add_outgoing_webhook.doneHelp'
-                        defaultMessage='Your outgoing webhook is set up. The following token will be sent in the outgoing payload. Please use it to verify that the request came from your Mattermost team (details at [Outgoing Webhooks](!https://docs.mattermost.com/developer/webhooks-outgoing.html)).'
+                        defaultMessage='Your outgoing webhook is set up. The following token will be sent in the outgoing payload. Please use it to verify that the request came from your Iconloop team (details at [Outgoing Webhooks](!https://docs.mattermost.com/developer/webhooks-outgoing.html)).'
                     />
                 </p>
             );

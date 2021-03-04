@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
@@ -114,7 +114,7 @@ export default class TutorialIntroScreens extends React.PureComponent {
                 <h1>
                     <FormattedMessage
                         id='tutorial_intro.screenOne.title2'
-                        defaultMessage='Mattermost'
+                        defaultMessage='Iconloop'
                     />
                 </h1>
                 <p>
@@ -187,7 +187,7 @@ export default class TutorialIntroScreens extends React.PureComponent {
                 <h3>
                     <FormattedMessage
                         id='tutorial_intro.screenTwo.title'
-                        defaultMessage='How Mattermost Works:'
+                        defaultMessage='How Iconloop Works:'
                     />
                 </h3>
                 <p>

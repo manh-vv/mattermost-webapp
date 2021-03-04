@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React, {useEffect} from 'react';
@@ -28,7 +28,7 @@ export default function EnableNotificationsStep(props: StepComponentProps) {
                 ),
                 body: Utils.localizeMessage(
                     'next_steps_view.notificationSetup.notficationsEnabledBody',
-                    'This is how notifications from Mattermost will appear',
+                    'This is how notifications from Iconloop will appear',
                 ),
                 requireInteraction: false,
                 silent: false,

@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
@@ -150,7 +150,7 @@ export default class DesktopNotificationSettings extends React.PureComponent {
                         <div className='mt-5'>
                             <FormattedMessage
                                 id='user.settings.notifications.sounds_info'
-                                defaultMessage='Notification sounds are available on Firefox, Edge, Safari, Chrome and Mattermost Desktop Apps.'
+                                defaultMessage='Notification sounds are available on Firefox, Edge, Safari, Chrome and Iconloop Desktop Apps.'
                             />
                         </div>
                     </fieldset>
@@ -239,7 +239,7 @@ export default class DesktopNotificationSettings extends React.PureComponent {
                     <div className='mt-5'>
                         <FormattedMessage
                             id='user.settings.notifications.info'
-                            defaultMessage='Desktop notifications are available on Edge, Firefox, Safari, Chrome and Mattermost Desktop Apps.'
+                            defaultMessage='Desktop notifications are available on Edge, Firefox, Safari, Chrome and Iconloop Desktop Apps.'
                         />
                     </div>
                 </fieldset>

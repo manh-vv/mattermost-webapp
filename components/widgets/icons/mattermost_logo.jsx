@@ -1,10 +1,10 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
 import {useIntl} from 'react-intl';
 
-export default function MattermostLogo(props) {
+export default function IconloopLogo(props) {
     const {formatMessage} = useIntl();
     return (
         <span {...props}>
@@ -15,7 +15,7 @@ export default function MattermostLogo(props) {
                 viewBox='0 0 500 500'
                 style={style.background}
                 role='img'
-                aria-label={formatMessage({id: 'generic_icons.mattermost', defaultMessage: 'Mattermost Logo'})}
+                aria-label={formatMessage({id: 'generic_icons.mattermost', defaultMessage: 'Iconloop Logo'})}
             >
                 <g>
                     <g>

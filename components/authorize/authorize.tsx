@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React, {ReactNode} from 'react';
@@ -127,7 +127,7 @@ export default class Authorize extends React.PureComponent<Props, State> {
                         <div className='text'>
                             <FormattedMarkdownMessage
                                 id='authorize.title'
-                                defaultMessage='Authorize **{appName}** to Connect to Your **Mattermost** User Account'
+                                defaultMessage='Authorize **{appName}** to Connect to Your **Iconloop** User Account'
                                 values={{
                                     appName: app.name,
                                 }}

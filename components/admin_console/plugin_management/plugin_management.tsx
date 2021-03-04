@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 /* eslint-disable react/no-string-refs */
 
@@ -831,7 +831,7 @@ export default class PluginManagement extends AdminSettings<Props, State> {
                     helpText={
                         <FormattedMarkdownMessage
                             id='admin.plugins.settings.enableDesc'
-                            defaultMessage='When true, enables plugins on your Mattermost server. Use plugins to integrate with third-party systems, extend functionality, or customize the user interface of your Mattermost server. See [documentation](https://about.mattermost.com/default-plugin-uploads) to learn more.'
+                            defaultMessage='When true, enables plugins on your Iconloop server. Use plugins to integrate with third-party systems, extend functionality, or customize the user interface of your Iconloop server. See [documentation](https://about.mattermost.com/default-plugin-uploads) to learn more.'
                         />
                     }
                     value={this.state.enable}
@@ -950,7 +950,7 @@ export default class PluginManagement extends AdminSettings<Props, State> {
                         <p className='help-text'>
                             <FormattedMessage
                                 id='admin.plugin.installedDesc'
-                                defaultMessage='Installed plugins on your Mattermost server.'
+                                defaultMessage='Installed plugins on your Iconloop server.'
                             />
                         </p>
                         <br/>
@@ -966,7 +966,7 @@ export default class PluginManagement extends AdminSettings<Props, State> {
             uploadHelpText = (
                 <FormattedMarkdownMessage
                     id='admin.plugin.uploadDesc'
-                    defaultMessage='Upload a plugin for your Mattermost server. See [documentation](!https://about.mattermost.com/default-plugin-uploads) to learn more.'
+                    defaultMessage='Upload a plugin for your Iconloop server. See [documentation](!https://about.mattermost.com/default-plugin-uploads) to learn more.'
                 />
             );
         } else if (enable && !enableUploads) {
@@ -1019,7 +1019,7 @@ export default class PluginManagement extends AdminSettings<Props, State> {
                                     helpText={
                                         <FormattedMarkdownMessage
                                             id='admin.plugins.settings.requirePluginSignatureDesc'
-                                            defaultMessage='When true, uploading plugins is disabled and may only be installed through the Marketplace. Plugins are always verified during Mattermost server startup and initialization. See [documentation](!https://mattermost.com/pl/default-plugin-signing) to learn more.'
+                                            defaultMessage='When true, uploading plugins is disabled and may only be installed through the Marketplace. Plugins are always verified during Iconloop server startup and initialization. See [documentation](!https://mattermost.com/pl/default-plugin-signing) to learn more.'
                                         />
                                     }
                                     value={this.state.requirePluginSignature}

@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -47,7 +47,7 @@ export default class GroupSettings extends React.PureComponent {
                             titleId={t('admin.group_settings.ldapGroupsTitle')}
                             titleDefault='AD/LDAP Groups'
                             subtitleId={t('admin.group_settings.ldapGroupsDescription')}
-                            subtitleDefault={`Connect AD/LDAP and create groups in Mattermost. To get started, configure group attributes on the [AD/LDAP] (${siteURL}/admin_console/authentication/ldap) configuration page.`}
+                            subtitleDefault={`Connect AD/LDAP and create groups in Iconloop. To get started, configure group attributes on the [AD/LDAP] (${siteURL}/admin_console/authentication/ldap) configuration page.`}
                             subtitleValues={{siteURL}}
                         >
                             <GroupsList

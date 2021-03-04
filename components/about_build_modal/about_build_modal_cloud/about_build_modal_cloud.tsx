@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -7,7 +7,7 @@ import {FormattedMessage} from 'react-intl';
 import classNames from 'classnames';
 
 import FormattedMarkdownMessage from 'components/formatted_markdown_message';
-import MattermostLogo from 'components/widgets/icons/mattermost_logo';
+import IconloopLogo from 'components/widgets/icons/mattermost_logo';
 
 import './about_build_modal_cloud.scss';
 
@@ -75,7 +75,7 @@ export default function AboutBuildModalCloud(props: Props) {
                 >
                     <FormattedMessage
                         id='about.title'
-                        values={{appTitle: config.SiteName || 'Mattermost'}}
+                        values={{appTitle: config.SiteName || 'Iconloop'}}
                         defaultMessage='About {appTitle}'
                     />
                 </Modal.Title>
@@ -83,18 +83,18 @@ export default function AboutBuildModalCloud(props: Props) {
             <Modal.Body>
                 <div className='about-modal__content'>
                     <div className='about-modal__logo'>
-                        <MattermostLogo/>
+                        <IconloopLogo/>
                     </div>
                     <div>
                         <h3 className='about-modal__title'>
-                            {'Mattermost'} {title}
+                            {'Iconloop'} {title}
                         </h3>
                         <p className='subtitle'>{subTitle}</p>
                         <div className='description'>
                             <div>
                                 <FormattedMessage
                                     id='about.version'
-                                    defaultMessage='Mattermost Version:'
+                                    defaultMessage='Iconloop Version:'
                                 />
                                 <span id='versionString'>{'\u00a0' + mmversion}</span>
                             </div>
@@ -103,12 +103,12 @@ export default function AboutBuildModalCloud(props: Props) {
                         <div className='about-footer'>
                             <FormattedMarkdownMessage
                                 id='about.notice'
-                                defaultMessage='Mattermost is made possible by the open source software used in our [server](!https://about.mattermost.com/platform-notice-txt/), [desktop](!https://about.mattermost.com/desktop-notice-txt/) and [mobile](!https://about.mattermost.com/mobile-notice-txt/) apps.'
+                                defaultMessage='Iconloop is made possible by the open source software used in our [server](!https://about.mattermost.com/platform-notice-txt/), [desktop](!https://about.mattermost.com/desktop-notice-txt/) and [mobile](!https://about.mattermost.com/mobile-notice-txt/) apps.'
                             />
                             <div className='copy-right'>
                                 <FormattedMessage
                                     id='about.copyright'
-                                    defaultMessage='Copyright 2015 - {currentYear} Mattermost, Inc. All rights reserved'
+                                    defaultMessage='Copyright 2015 - {currentYear} Iconloop, Inc. All rights reserved'
                                     values={{
                                         currentYear: new Date().getFullYear(),
                                     }}

@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -93,7 +93,7 @@ const ConfigurationAnnouncementBar: React.FC<Props> = (props: Props) => {
                     />
                     <FormattedMessage
                         id='announcement_bar.warn_metric_status_ack.text'
-                        defaultMessage='Thank you for contacting Mattermost. We will follow up with you soon.'
+                        defaultMessage='Thank you for contacting Iconloop. We will follow up with you soon.'
                     />
                 </>
             );
@@ -311,7 +311,7 @@ const ConfigurationAnnouncementBar: React.FC<Props> = (props: Props) => {
         let defaultMessage;
         if (props.config?.EnableSignUpWithGitLab === 'true') {
             id = t('announcement_bar.error.site_url_gitlab.full');
-            defaultMessage = 'Please configure your [site URL](https://docs.mattermost.com/administration/config-settings.html#site-url) either on the [System Console](/admin_console/environment/web_server) or, if you\'re using GitLab Mattermost, in gitlab.rb.';
+            defaultMessage = 'Please configure your [site URL](https://docs.mattermost.com/administration/config-settings.html#site-url) either on the [System Console](/admin_console/environment/web_server) or, if you\'re using GitLab Iconloop, in gitlab.rb.';
         } else {
             id = t('announcement_bar.error.site_url.full');
             defaultMessage = 'Please configure your [site URL](https://docs.mattermost.com/administration/config-settings.html#site-url) on the [System Console](/admin_console/environment/web_server).';

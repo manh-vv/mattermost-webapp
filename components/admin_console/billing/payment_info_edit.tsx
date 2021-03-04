@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React, {useEffect, useState} from 'react';
@@ -105,7 +105,7 @@ const PaymentInfoEdit: React.FC = () => {
                                 <>
                                     <FormattedMarkdownMessage
                                         id='admin.billing.payment_info_edit.creditCardWarningDescription'
-                                        defaultMessage='Credit cards are kept on file for future payments. You’ll only be charged if you move in to the paid tier of Mattermost Cloud and exceed the free tier limits. '
+                                        defaultMessage='Credit cards are kept on file for future payments. You’ll only be charged if you move in to the paid tier of Iconloop Cloud and exceed the free tier limits. '
                                     />
                                     <a
                                         target='_new'

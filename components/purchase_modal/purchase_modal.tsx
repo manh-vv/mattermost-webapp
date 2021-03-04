@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
@@ -104,7 +104,7 @@ export default class PurchaseModal extends React.PureComponent<Props, State> {
                 <div className='LHS'>
                     <div className='title'>
                         <FormattedMessage
-                            defaultMessage={'Upgrade your Mattermost Cloud Susbcription'}
+                            defaultMessage={'Upgrade your Iconloop Cloud Susbcription'}
                             id={'admin.billing.subscription.upgradeCloudSubscription'}
                         />
                     </div>
@@ -149,7 +149,7 @@ export default class PurchaseModal extends React.PureComponent<Props, State> {
                     <div className='price-container'>
                         <div className='bold-text'>
                             <FormattedMessage
-                                defaultMessage={'Mattermost Cloud'}
+                                defaultMessage={'Iconloop Cloud'}
                                 id={'admin.billing.subscription.mattermostCloud'}
                             />
                         </div>

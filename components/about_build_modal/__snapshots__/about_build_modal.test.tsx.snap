@@ -45,7 +45,7 @@ exports[`components/AboutBuildModal should match snapshot for cloud edition 1`] 
         id="about.title"
         values={
           Object {
-            "appTitle": "Mattermost",
+            "appTitle": "Iconloop",
           }
         }
       />
@@ -61,13 +61,13 @@ exports[`components/AboutBuildModal should match snapshot for cloud edition 1`] 
       <div
         className="about-modal__logo"
       >
-        <MattermostLogo />
+        <IconloopLogo />
       </div>
       <div>
         <h3
           className="about-modal__title"
         >
-          Mattermost
+          Iconloop
            
           <FormattedMessage
             defaultMessage="Cloud"
@@ -87,7 +87,7 @@ exports[`components/AboutBuildModal should match snapshot for cloud edition 1`] 
         >
           <div>
             <FormattedMessage
-              defaultMessage="Mattermost Version:"
+              defaultMessage="Iconloop Version:"
               id="about.version"
             />
             <span
@@ -104,20 +104,20 @@ exports[`components/AboutBuildModal should match snapshot for cloud edition 1`] 
             defaultMessage="Licensed to:"
             id="about.licensed"
           />
-           Mattermost Inc
+           Iconloop Inc
         </div>
         <div
           className="about-footer"
         >
           <injectIntl(FormattedMarkdownMessage)
-            defaultMessage="Mattermost is made possible by the open source software used in our [server](!https://about.mattermost.com/platform-notice-txt/), [desktop](!https://about.mattermost.com/desktop-notice-txt/) and [mobile](!https://about.mattermost.com/mobile-notice-txt/) apps."
+            defaultMessage="Iconloop is made possible by the open source software used in our [server](!https://about.mattermost.com/platform-notice-txt/), [desktop](!https://about.mattermost.com/desktop-notice-txt/) and [mobile](!https://about.mattermost.com/mobile-notice-txt/) apps."
             id="about.notice"
           />
           <div
             className="copy-right"
           >
             <FormattedMessage
-              defaultMessage="Copyright 2015 - {currentYear} Mattermost, Inc. All rights reserved"
+              defaultMessage="Copyright 2015 - {currentYear} Iconloop, Inc. All rights reserved"
               id="about.copyright"
               values={
                 Object {
@@ -208,7 +208,7 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
         id="about.title"
         values={
           Object {
-            "appTitle": "Mattermost",
+            "appTitle": "Iconloop",
           }
         }
       />
@@ -224,13 +224,13 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
       <div
         className="about-modal__logo"
       >
-        <MattermostLogo />
+        <IconloopLogo />
       </div>
       <div>
         <h3
           className="about-modal__title"
         >
-          Mattermost
+          Iconloop
            
           <FormattedMessage
             defaultMessage="Enterprise Edition"
@@ -250,7 +250,7 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
         >
           <div>
             <FormattedMessage
-              defaultMessage="Mattermost Version:"
+              defaultMessage="Iconloop Version:"
               id="about.version"
             />
             <span
@@ -286,7 +286,7 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
             id="about.licensed"
           />
           <Nbsp />
-          Mattermost Inc
+          Iconloop Inc
         </div>
       </div>
     </div>
@@ -313,7 +313,7 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
           className="about-modal__copyright"
         >
           <FormattedMessage
-            defaultMessage="Copyright 2015 - {currentYear} Mattermost, Inc. All rights reserved"
+            defaultMessage="Copyright 2015 - {currentYear} Iconloop, Inc. All rights reserved"
             id="about.copyright"
             values={
               Object {
@@ -356,7 +356,7 @@ exports[`components/AboutBuildModal should match snapshot for enterprise edition
     >
       <p>
         <injectIntl(FormattedMarkdownMessage)
-          defaultMessage="Mattermost is made possible by the open source software used in our [server](!https://about.mattermost.com/platform-notice-txt/), [desktop](!https://about.mattermost.com/desktop-notice-txt/) and [mobile](!https://about.mattermost.com/mobile-notice-txt/) apps."
+          defaultMessage="Iconloop is made possible by the open source software used in our [server](!https://about.mattermost.com/platform-notice-txt/), [desktop](!https://about.mattermost.com/desktop-notice-txt/) and [mobile](!https://about.mattermost.com/mobile-notice-txt/) apps."
           id="about.notice"
         />
       </p>
@@ -444,7 +444,7 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
         id="about.title"
         values={
           Object {
-            "appTitle": "Mattermost",
+            "appTitle": "Iconloop",
           }
         }
       />
@@ -460,13 +460,13 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
       <div
         className="about-modal__logo"
       >
-        <MattermostLogo />
+        <IconloopLogo />
       </div>
       <div>
         <h3
           className="about-modal__title"
         >
-          Mattermost
+          Iconloop
            
           <FormattedMessage
             defaultMessage="Team Edition"
@@ -486,7 +486,7 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
         >
           <div>
             <FormattedMessage
-              defaultMessage="Mattermost Version:"
+              defaultMessage="Iconloop Version:"
               id="about.version"
             />
             <span
@@ -521,7 +521,7 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
     >
       <div>
         <FormattedMessage
-          defaultMessage="Join the Mattermost community at "
+          defaultMessage="Join the Iconloop community at "
           id="about.teamEditionLearn"
         />
         <a
@@ -539,7 +539,7 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
           className="about-modal__copyright"
         >
           <FormattedMessage
-            defaultMessage="Copyright 2015 - {currentYear} Mattermost, Inc. All rights reserved"
+            defaultMessage="Copyright 2015 - {currentYear} Iconloop, Inc. All rights reserved"
             id="about.copyright"
             values={
               Object {
@@ -582,7 +582,7 @@ exports[`components/AboutBuildModal should match snapshot for team edition 1`] =
     >
       <p>
         <injectIntl(FormattedMarkdownMessage)
-          defaultMessage="Mattermost is made possible by the open source software used in our [server](!https://about.mattermost.com/platform-notice-txt/), [desktop](!https://about.mattermost.com/desktop-notice-txt/) and [mobile](!https://about.mattermost.com/mobile-notice-txt/) apps."
+          defaultMessage="Iconloop is made possible by the open source software used in our [server](!https://about.mattermost.com/platform-notice-txt/), [desktop](!https://about.mattermost.com/desktop-notice-txt/) and [mobile](!https://about.mattermost.com/mobile-notice-txt/) apps."
           id="about.notice"
         />
       </p>
@@ -669,7 +669,7 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
         id="about.title"
         values={
           Object {
-            "appTitle": "Mattermost",
+            "appTitle": "Iconloop",
           }
         }
       />
@@ -685,13 +685,13 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
       <div
         className="about-modal__logo"
       >
-        <MattermostLogo />
+        <IconloopLogo />
       </div>
       <div>
         <h3
           className="about-modal__title"
         >
-          Mattermost
+          Iconloop
            
           <FormattedMessage
             defaultMessage="Team Edition"
@@ -711,7 +711,7 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
         >
           <div>
             <FormattedMessage
-              defaultMessage="Mattermost Version:"
+              defaultMessage="Iconloop Version:"
               id="about.version"
             />
             <span
@@ -757,7 +757,7 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
     >
       <div>
         <FormattedMessage
-          defaultMessage="Join the Mattermost community at "
+          defaultMessage="Join the Iconloop community at "
           id="about.teamEditionLearn"
         />
         <a
@@ -775,7 +775,7 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
           className="about-modal__copyright"
         >
           <FormattedMessage
-            defaultMessage="Copyright 2015 - {currentYear} Mattermost, Inc. All rights reserved"
+            defaultMessage="Copyright 2015 - {currentYear} Iconloop, Inc. All rights reserved"
             id="about.copyright"
             values={
               Object {
@@ -818,7 +818,7 @@ exports[`components/AboutBuildModal should show ci if a ci build 1`] = `
     >
       <p>
         <injectIntl(FormattedMarkdownMessage)
-          defaultMessage="Mattermost is made possible by the open source software used in our [server](!https://about.mattermost.com/platform-notice-txt/), [desktop](!https://about.mattermost.com/desktop-notice-txt/) and [mobile](!https://about.mattermost.com/mobile-notice-txt/) apps."
+          defaultMessage="Iconloop is made possible by the open source software used in our [server](!https://about.mattermost.com/platform-notice-txt/), [desktop](!https://about.mattermost.com/desktop-notice-txt/) and [mobile](!https://about.mattermost.com/mobile-notice-txt/) apps."
           id="about.notice"
         />
       </p>
@@ -905,7 +905,7 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
         id="about.title"
         values={
           Object {
-            "appTitle": "Mattermost",
+            "appTitle": "Iconloop",
           }
         }
       />
@@ -921,13 +921,13 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
       <div
         className="about-modal__logo"
       >
-        <MattermostLogo />
+        <IconloopLogo />
       </div>
       <div>
         <h3
           className="about-modal__title"
         >
-          Mattermost
+          Iconloop
            
           <FormattedMessage
             defaultMessage="Team Edition"
@@ -947,7 +947,7 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
         >
           <div>
             <FormattedMessage
-              defaultMessage="Mattermost Version:"
+              defaultMessage="Iconloop Version:"
               id="about.version"
             />
             <span
@@ -982,7 +982,7 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
     >
       <div>
         <FormattedMessage
-          defaultMessage="Join the Mattermost community at "
+          defaultMessage="Join the Iconloop community at "
           id="about.teamEditionLearn"
         />
         <a
@@ -1000,7 +1000,7 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
           className="about-modal__copyright"
         >
           <FormattedMessage
-            defaultMessage="Copyright 2015 - {currentYear} Mattermost, Inc. All rights reserved"
+            defaultMessage="Copyright 2015 - {currentYear} Iconloop, Inc. All rights reserved"
             id="about.copyright"
             values={
               Object {
@@ -1043,7 +1043,7 @@ exports[`components/AboutBuildModal should show dev if this is a dev build 1`] =
     >
       <p>
         <injectIntl(FormattedMarkdownMessage)
-          defaultMessage="Mattermost is made possible by the open source software used in our [server](!https://about.mattermost.com/platform-notice-txt/), [desktop](!https://about.mattermost.com/desktop-notice-txt/) and [mobile](!https://about.mattermost.com/mobile-notice-txt/) apps."
+          defaultMessage="Iconloop is made possible by the open source software used in our [server](!https://about.mattermost.com/platform-notice-txt/), [desktop](!https://about.mattermost.com/desktop-notice-txt/) and [mobile](!https://about.mattermost.com/mobile-notice-txt/) apps."
           id="about.notice"
         />
       </p>

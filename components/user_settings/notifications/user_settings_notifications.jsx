@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
@@ -413,7 +413,7 @@ export default class NotificationsTab extends React.PureComponent {
                             <div className='mt-5'>
                                 <FormattedMessage
                                     id='user.settings.push_notification.info'
-                                    defaultMessage='Notification alerts are pushed to your mobile device when there is activity in Mattermost.'
+                                    defaultMessage='Notification alerts are pushed to your mobile device when there is activity in Iconloop.'
                                 />
                             </div>
                         </fieldset>

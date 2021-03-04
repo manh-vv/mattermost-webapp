@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -120,7 +120,7 @@ export default function HelpFormatting(): JSX.Element {
             <p>
                 <FormattedMarkdownMessage
                     id='help.formatting.syntax.description'
-                    defaultMessage='To add syntax highlighting, type the language to be highlighted after the ``` at the beginning of the code block. Mattermost also offers four different code themes (GitHub, Solarized Dark, Solarized Light, Monokai) that can be changed in **Account Settings** > **Display** > **Theme** > **Custom Theme** > **Center Channel Styles**'
+                    defaultMessage='To add syntax highlighting, type the language to be highlighted after the ``` at the beginning of the code block. Iconloop also offers four different code themes (GitHub, Solarized Dark, Solarized Light, Monokai) that can be changed in **Account Settings** > **Display** > **Theme** > **Custom Theme** > **Center Channel Styles**'
                 />
             </p>
             <p>
@@ -235,7 +235,7 @@ export default function HelpFormatting(): JSX.Element {
             </p>
             <FormattedMessage
                 id='help.formatting.linkEx'
-                defaultMessage={'[Check out Mattermost!](https://about.mattermost.com/)'}
+                defaultMessage={'[Check out Iconloop!](https://about.mattermost.com/)'}
             >
                 {(example) => (
                     <div>
@@ -263,7 +263,7 @@ export default function HelpFormatting(): JSX.Element {
             </p>
             <FormattedMessage
                 id='help.formatting.imagesExample'
-                defaultMessage={'![alt text]({siteUrl}/static/images/logo-email.png "Mattermost horizontal logo")\n\nand\n\n[![Atlassian](https://wac-cdn.atlassian.com/assets/img/favicons/atlassian/favicon.png)](https://travis-ci.org/mattermost/mattermost-server) [![Github](https://github.githubassets.com/favicon.ico)](https://github.com/mattermost/mattermost-server)'}
+                defaultMessage={'![alt text]({siteUrl}/static/images/logo-email.png "Iconloop horizontal logo")\n\nand\n\n[![Atlassian](https://wac-cdn.atlassian.com/assets/img/favicons/atlassian/favicon.png)](https://travis-ci.org/mattermost/mattermost-server) [![Github](https://github.githubassets.com/favicon.ico)](https://github.com/mattermost/mattermost-server)'}
                 values={{siteURL: getSiteURL()}}
             >
                 {(example) => renderRawExampleWithResult(example)}

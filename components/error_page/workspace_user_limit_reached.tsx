@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React, {useEffect} from 'react';
@@ -36,7 +36,7 @@ const WorkspaceUserLimitReached: React.FC = () => {
                         <div className='ErrorPage__maxFreeUsersReachedDescription'>
                             <FormattedMessage
                                 id='error.maxFreeUsersReached.description'
-                                defaultMessage='New users cannot be added to this workspace because it has reached the user limit for the free version of Mattermost Cloud. The system administrator has been notified'
+                                defaultMessage='New users cannot be added to this workspace because it has reached the user limit for the free version of Iconloop Cloud. The system administrator has been notified'
                             />
                         </div>
                     </article>

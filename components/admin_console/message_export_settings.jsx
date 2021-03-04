@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
@@ -241,7 +241,7 @@ export default class MessageExportSettings extends AdminSettings {
                     helpText={
                         <FormattedMarkdownMessage
                             id='admin.service.complianceExportDesc'
-                            defaultMessage='When true, Mattermost will export all messages that were posted in the last 24 hours. The export task is scheduled to run once per day. See [the documentation](!https://about.mattermost.com/default-compliance-export-documentation) to learn more.'
+                            defaultMessage='When true, Iconloop will export all messages that were posted in the last 24 hours. The export task is scheduled to run once per day. See [the documentation](!https://about.mattermost.com/default-compliance-export-documentation) to learn more.'
                         />
                     }
                     value={this.state.enableComplianceExport}

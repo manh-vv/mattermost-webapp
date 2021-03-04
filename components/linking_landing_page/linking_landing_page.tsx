@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React, {PureComponent} from 'react';
@@ -6,7 +6,7 @@ import {FormattedMessage} from 'react-intl';
 
 import desktopImg from 'images/deep-linking/deeplinking-desktop-img.png';
 import mobileImg from 'images/deep-linking/deeplinking-mobile-img.png';
-import MattermostLogoSvg from 'images/logo.svg';
+import IconloopLogoSvg from 'images/logo.svg';
 import FormattedMarkdownMessage from 'components/formatted_markdown_message';
 import CheckboxCheckedIcon from 'components/widgets/icons/checkbox_checked_icon';
 import BrowserStore from 'stores/browser_store';
@@ -58,7 +58,7 @@ export default class LinkingLandingPage extends PureComponent<Props, State> {
     componentDidMount() {
         Utils.applyTheme(this.props.defaultTheme);
         if (this.checkLandingPreferenceApp()) {
-            this.openMattermostApp();
+            this.openIconloopApp();
         }
 
         window.addEventListener('beforeunload', this.clearLandingPreferenceIfNotChecked);
@@ -102,7 +102,7 @@ export default class LinkingLandingPage extends PureComponent<Props, State> {
 
         switch (pref) {
         case LandingPreferenceTypes.MATTERMOSTAPP:
-            BrowserStore.setLandingPreferenceToMattermostApp(this.props.siteUrl);
+            BrowserStore.setLandingPreferenceToIconloopApp(this.props.siteUrl);
             break;
         case LandingPreferenceTypes.BROWSER:
             BrowserStore.setLandingPreferenceToBrowser(this.props.siteUrl);
@@ -112,7 +112,7 @@ export default class LinkingLandingPage extends PureComponent<Props, State> {
         }
     }
 
-    openMattermostApp = () => {
+    openIconloopApp = () => {
         this.setPreference(LandingPreferenceTypes.MATTERMOSTAPP);
         this.setState({redirectPage: true});
         window.location.href = this.state.nativeLocation;
@@ -270,7 +270,7 @@ export default class LinkingLandingPage extends PureComponent<Props, State> {
         let openingLink = (
             <FormattedMessage
                 id='get_app.openingLink'
-                defaultMessage='Opening link in Mattermost...'
+                defaultMessage='Opening link in Iconloop...'
             />
         );
         if (this.props.enableCustomBrand) {
@@ -311,7 +311,7 @@ export default class LinkingLandingPage extends PureComponent<Props, State> {
                 id='get_app.ifNothingPrompts'
                 defaultMessage='You can view {siteName} in the desktop app or continue in your web browser.'
                 values={{
-                    siteName: this.props.enableCustomBrand ? '' : ' Mattermost',
+                    siteName: this.props.enableCustomBrand ? '' : ' Iconloop',
                 }}
             />
         );
@@ -321,7 +321,7 @@ export default class LinkingLandingPage extends PureComponent<Props, State> {
                     id='get_app.ifNothingPromptsMobile'
                     defaultMessage='You can view {siteName} in the mobile app or continue in your web browser.'
                     values={{
-                        siteName: this.props.enableCustomBrand ? '' : ' Mattermost',
+                        siteName: this.props.enableCustomBrand ? '' : ' Iconloop',
                     }}
                 />
             );
@@ -396,7 +396,7 @@ export default class LinkingLandingPage extends PureComponent<Props, State> {
         let header = (
             <div className='get-app__header'>
                 <img
-                    src={MattermostLogoSvg}
+                    src={IconloopLogoSvg}
                     className='get-app__logo'
                 />
             </div>

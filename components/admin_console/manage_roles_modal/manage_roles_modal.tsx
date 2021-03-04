@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 /* eslint-disable react/no-string-refs */
 
@@ -189,7 +189,7 @@ export default class ManageRolesModal extends React.PureComponent<Props, State> 
                             </strong>
                             <FormattedMessage
                                 id='admin.manage_roles.postAllRole'
-                                defaultMessage='Access to post to all Mattermost channels including direct messages.'
+                                defaultMessage='Access to post to all Iconloop channels including direct messages.'
                             />
                         </label>
                     </div>
@@ -210,7 +210,7 @@ export default class ManageRolesModal extends React.PureComponent<Props, State> 
                             </strong>
                             <FormattedMessage
                                 id='admin.manage_roles.postAllPublicRole'
-                                defaultMessage='Access to post to all Mattermost public channels.'
+                                defaultMessage='Access to post to all Iconloop public channels.'
                             />
                         </label>
                     </div>

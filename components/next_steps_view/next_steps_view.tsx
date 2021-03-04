@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -274,8 +274,8 @@ export default class NextStepsView extends React.PureComponent<Props, State> {
                     <div className='NextStepsView__header-headerText'>
                         <h1 className='NextStepsView__header-headerTopText'>
                             <FormattedMessage
-                                id='next_steps_view.welcomeToMattermost'
-                                defaultMessage='Welcome to Mattermost'
+                                id='next_steps_view.welcomeToIconloop'
+                                defaultMessage='Welcome to Iconloop'
                             />
                         </h1>
                         <h2 className='NextStepsView__header-headerBottomText'>

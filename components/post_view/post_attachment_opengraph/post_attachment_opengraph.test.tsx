@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import {shallow} from 'enzyme';
@@ -44,8 +44,8 @@ describe('PostAttachmentOpenGraph', () => {
                 secure_url: '',
                 url: imageUrl,
             }],
-            site_name: 'Mattermost',
-            title: 'Mattermost Private Cloud Messaging',
+            site_name: 'Iconloop',
+            title: 'Iconloop Private Cloud Messaging',
         },
         toggleEmbedVisibility: jest.fn(),
         actions: {

@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -212,7 +212,7 @@ export default class GroupsList extends React.PureComponent<Props, State> {
                     <div className='group-description'>
                         <FormattedMessage
                             id='admin.group_settings.groups_list.mappingHeader'
-                            defaultMessage='Mattermost Linking'
+                            defaultMessage='Iconloop Linking'
                         />
                     </div>
                     <div className='group-actions'/>

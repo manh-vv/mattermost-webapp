@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 /* eslint-disable react/no-string-refs */
 
@@ -220,7 +220,7 @@ export default class LicenseSettings extends React.PureComponent {
             // Note: DO NOT LOCALISE THESE STRINGS. Legally we can not since the license is in English.
             edition = (
                 <div>
-                    <p>{'Mattermost Team Edition. Upgrade to Mattermost Enterprise Edition to add the ability to unlock enterprise features.'}</p>
+                    <p>{'Iconloop Team Edition. Upgrade to Iconloop Enterprise Edition to add the ability to unlock enterprise features.'}</p>
                     {this.state.upgradingPercentage !== 100 &&
                         <div>
                             <p>
@@ -249,7 +249,7 @@ export default class LicenseSettings extends React.PureComponent {
                             <p className='upgrade-legal-terms'>
                                 <FormattedMarkdownMessage
                                     id='admin.license.enterprise.upgrade.accept-terms'
-                                    defaultMessage='By clicking **Upgrade to Enterprise Edition**, I agree to the terms of the Mattermost Enterprise Edition License.'
+                                    defaultMessage='By clicking **Upgrade to Enterprise Edition**, I agree to the terms of the Iconloop Enterprise Edition License.'
                                 />
                             </p>
                             {this.state.upgradeError &&
@@ -298,8 +298,8 @@ export default class LicenseSettings extends React.PureComponent {
 
             licenseType = (
                 <div>
-                    <p>{'When using Mattermost Team Edition, the software is offered under a Mattermost MIT Compiled License. See MIT-COMPILED-LICENSE.md in your root install directory for details.'}</p>
-                    <p>{'When using Mattermost Enterprise Edition, the software is offered under a commercial license. See below for “Enterprise Edition License” for details.'}</p>
+                    <p>{'When using Iconloop Team Edition, the software is offered under a Iconloop MIT Compiled License. See MIT-COMPILED-LICENSE.md in your root install directory for details.'}</p>
+                    <p>{'When using Iconloop Enterprise Edition, the software is offered under a commercial license. See below for “Enterprise Edition License” for details.'}</p>
                     <p>{'See NOTICE.txt for information about open source software used in the system.'}</p>
                 </div>
             );
@@ -307,8 +307,8 @@ export default class LicenseSettings extends React.PureComponent {
             eelicense = this.renderEELicenseText();
         } else if (license.IsLicensed === 'true' && !uploading) {
             // Note: DO NOT LOCALISE THESE STRINGS. Legally we can not since the license is in English.
-            const sku = license.SkuShortName ? <React.Fragment>{`Edition: Mattermost Enterprise Edition ${license.SkuShortName}`}<br/></React.Fragment> : null;
-            edition = 'Mattermost Enterprise Edition. Enterprise features on this server have been unlocked with a license key and a valid subscription.';
+            const sku = license.SkuShortName ? <React.Fragment>{`Edition: Iconloop Enterprise Edition ${license.SkuShortName}`}<br/></React.Fragment> : null;
+            edition = 'Iconloop Enterprise Edition. Enterprise features on this server have been unlocked with a license key and a valid subscription.';
             if (upgradedFromTE) {
                 eelicense = this.renderEELicenseText();
             }
@@ -320,7 +320,7 @@ export default class LicenseSettings extends React.PureComponent {
                         </p>}
                     {upgradedFromTE &&
                         <div>
-                            <p>{'When using Mattermost Enterprise Edition, the software is offered under a commercial license. See below for “Enterprise Edition License” for details.'}</p>
+                            <p>{'When using Iconloop Enterprise Edition, the software is offered under a commercial license. See below for “Enterprise Edition License” for details.'}</p>
                             <p>{'See NOTICE.txt for information about open source software used in the system.'}</p>
                             <p>{'Your subscription details are as follows:'}</p>
                         </div>}
@@ -351,7 +351,7 @@ export default class LicenseSettings extends React.PureComponent {
             // Note: DO NOT LOCALISE THESE STRINGS. Legally we can not since the license is in English.
             edition = (
                 <div>
-                    {'Mattermost Enterprise Edition. A license is required to unlock enterprise features.'}
+                    {'Iconloop Enterprise Edition. A license is required to unlock enterprise features.'}
                     <p className='trial'>
                         <button
                             type='button'
@@ -374,7 +374,7 @@ export default class LicenseSettings extends React.PureComponent {
                     <p className='trial-legal-terms'>
                         <FormattedMarkdownMessage
                             id='admin.license.trial-request.accept-terms'
-                            defaultMessage='By clicking **Start trial**, I agree to the [Mattermost Software Evaluation Agreement](!https://mattermost.com/software-evaluation-agreement/), [Privacy Policy](!https://mattermost.com/privacy-policy/), and receiving product emails.'
+                            defaultMessage='By clicking **Start trial**, I agree to the [Iconloop Software Evaluation Agreement](!https://mattermost.com/software-evaluation-agreement/), [Privacy Policy](!https://mattermost.com/privacy-policy/), and receiving product emails.'
                         />
                     </p>
                 </div>
@@ -383,7 +383,7 @@ export default class LicenseSettings extends React.PureComponent {
             if (upgradedFromTE) {
                 licenseType = (
                     <div>
-                        <p>{'When using Mattermost Enterprise Edition, the software is offered under a commercial license. See below for “Enterprise Edition License” for details.'}</p>
+                        <p>{'When using Iconloop Enterprise Edition, the software is offered under a commercial license. See below for “Enterprise Edition License” for details.'}</p>
                         <p>{'See NOTICE.txt for information about open source software used in the system.'}</p>
                     </div>
                 );
@@ -579,7 +579,7 @@ export default class LicenseSettings extends React.PureComponent {
                     <p className='help-text m-0'>
                         <FormattedMarkdownMessage
                             id='admin.license.uploadDesc'
-                            defaultMessage='Upload a license key for Mattermost Enterprise Edition to upgrade this server. [Visit us online](!http://mattermost.com) to learn more about the benefits of Enterprise Edition or to purchase a key.'
+                            defaultMessage='Upload a license key for Iconloop Enterprise Edition to upgrade this server. [Visit us online](!http://mattermost.com) to learn more about the benefits of Enterprise Edition or to purchase a key.'
                         />
                     </p>
                 </div>
@@ -600,9 +600,9 @@ export default class LicenseSettings extends React.PureComponent {
                 </label>
                 <div className='col-sm-8 enterprise-license-text'>
                     <div>
-                        <p>{'The Mattermost Enterprise Edition (EE) license (the “EE License”)'}</p>
-                        <p>{'Copyright (c) 2016-present Mattermost, Inc.'}</p>
-                        <p>{'The subscription-only features of the Mattermost Enterprise Edition software and associated documentation files (the "Software") may only be used if you (and any entity that you represent) (i) have agreed to, and are in compliance with, the Mattermost Subscription Terms of Service, available at https://about.mattermost.com/enterprise-edition-terms/ (the “EE Terms”), and (ii) otherwise have a valid Mattermost Enterprise Edition subscription for the correct features, number of user seats and instances of Mattermost Enterprise Edition that you are running, accessing, or using.  You may, however, utilize the free version of the Software (with several features not enabled) under this license without a license key or subscription provided that you otherwise comply with the terms and conditions of this Agreement. Subject to the foregoing, except as explicitly permitted in the EE Terms, it is forbidden to copy, merge, modify, publish, distribute, sublicense, stream, perform, display, create derivative works of and/or sell the Software in either source or executable form without written agreement from Mattermost.  Notwithstanding anything to the contrary, free versions of the Software are provided “AS-IS” without indemnification, support, or warranties of any kind, expressed or implied. You assume all risk associated with any use of free versions of the Software.'}</p>
+                        <p>{'The Iconloop Enterprise Edition (EE) license (the “EE License”)'}</p>
+                        <p>{'Copyright (c) 2016-present Iconloop, Inc.'}</p>
+                        <p>{'The subscription-only features of the Iconloop Enterprise Edition software and associated documentation files (the "Software") may only be used if you (and any entity that you represent) (i) have agreed to, and are in compliance with, the Iconloop Subscription Terms of Service, available at https://about.mattermost.com/enterprise-edition-terms/ (the “EE Terms”), and (ii) otherwise have a valid Iconloop Enterprise Edition subscription for the correct features, number of user seats and instances of Iconloop Enterprise Edition that you are running, accessing, or using.  You may, however, utilize the free version of the Software (with several features not enabled) under this license without a license key or subscription provided that you otherwise comply with the terms and conditions of this Agreement. Subject to the foregoing, except as explicitly permitted in the EE Terms, it is forbidden to copy, merge, modify, publish, distribute, sublicense, stream, perform, display, create derivative works of and/or sell the Software in either source or executable form without written agreement from Iconloop.  Notwithstanding anything to the contrary, free versions of the Software are provided “AS-IS” without indemnification, support, or warranties of any kind, expressed or implied. You assume all risk associated with any use of free versions of the Software.'}</p>
                         <p>{'EXCEPT AS OTHERWISE SET FORTH IN A BINDING WRITTEN AGREEMENT BETWEEN YOU AND MATTERMOST, THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.'}</p>
                     </div>
                 </div>

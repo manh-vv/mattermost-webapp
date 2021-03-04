@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React, {useEffect} from 'react';
@@ -59,7 +59,7 @@ export default function UserLimitModal(props: Props) {
         >
             <FormattedMessage
                 id={'upgrade.cloud'}
-                defaultMessage={'Upgrade Mattermost Cloud'}
+                defaultMessage={'Upgrade Iconloop Cloud'}
             />
         </Button>
     ) : (<NotifyLink className='confirm-button'/>);
@@ -87,7 +87,7 @@ export default function UserLimitModal(props: Props) {
                             <FormattedMessage
                                 id={'upgrade.cloud_modal_body'}
                                 defaultMessage={
-                                    'The free tier is limited to {num} users. Upgrade Mattermost Cloud for more users.'
+                                    'The free tier is limited to {num} users. Upgrade Iconloop Cloud for more users.'
                                 }
                                 values={{
                                     num: props.cloudUserLimit,

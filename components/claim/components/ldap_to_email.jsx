@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import PropTypes from 'prop-types';
@@ -145,7 +145,7 @@ export default class LDAPToEmail extends React.PureComponent {
                     <p>
                         <FormattedMessage
                             id='claim.ldap_to_email.email'
-                            defaultMessage='After switching your authentication method, you will use {email} to login. Your AD/LDAP credentials will no longer allow access to Mattermost.'
+                            defaultMessage='After switching your authentication method, you will use {email} to login. Your AD/LDAP credentials will no longer allow access to Iconloop.'
                             values={{
                                 email: this.props.email,
                             }}

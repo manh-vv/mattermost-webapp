@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -20,7 +20,7 @@ const ErrorTitle: React.FC<Props> = ({type, title}: Props) => {
             errorTitle = (
                 <FormattedMessage
                     id='error.local_storage.title'
-                    defaultMessage='Cannot Load Mattermost'
+                    defaultMessage='Cannot Load Iconloop'
                 />
             );
             break;
@@ -44,7 +44,7 @@ const ErrorTitle: React.FC<Props> = ({type, title}: Props) => {
             errorTitle = (
                 <FormattedMessage
                     id='error.oauth_missing_code.title'
-                    defaultMessage='Mattermost Needs Your Help'
+                    defaultMessage='Iconloop Needs Your Help'
                 />
             );
             break;

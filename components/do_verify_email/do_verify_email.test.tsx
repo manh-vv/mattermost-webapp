@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -11,7 +11,7 @@ describe('components/DoVerifyEmail', () => {
         location: {
             search: '?token=9f392f193973g11ggh398h39hg0ghH&email=test@example.com',
         },
-        siteName: 'Mattermost',
+        siteName: 'Iconloop',
         actions: {
             verifyUserEmail: jest.fn().mockResolvedValue({data: true}),
             getMe: jest.fn().mockResolvedValue({data: true}),

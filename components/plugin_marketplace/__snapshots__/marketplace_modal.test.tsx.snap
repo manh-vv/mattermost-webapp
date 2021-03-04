@@ -30,7 +30,7 @@ exports[`components/marketplace/ AllPlugins should render with one plugin 1`] = 
         "homepage_url": "https://github.com/mattermost/mattermost-plugin-nps",
         "installed_version": "",
         "manifest": Object {
-          "description": "This plugin sends quarterly user satisfaction surveys to gather feedback and help improve Mattermost",
+          "description": "This plugin sends quarterly user satisfaction surveys to gather feedback and help improve Iconloop",
           "id": "com.mattermost.nps",
           "min_server_version": "5.14.0",
           "name": "User Satisfaction Surveys",
@@ -54,7 +54,7 @@ exports[`components/marketplace/ AllPlugins should render with plugins 1`] = `
         "homepage_url": "https://github.com/mattermost/mattermost-plugin-nps",
         "installed_version": "",
         "manifest": Object {
-          "description": "This plugin sends quarterly user satisfaction surveys to gather feedback and help improve Mattermost",
+          "description": "This plugin sends quarterly user satisfaction surveys to gather feedback and help improve Iconloop",
           "id": "com.mattermost.nps",
           "min_server_version": "5.14.0",
           "name": "User Satisfaction Surveys",

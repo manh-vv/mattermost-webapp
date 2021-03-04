@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Iconloop, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import React from 'react';
@@ -62,7 +62,7 @@ describe('components/FaviconTitleHandler', () => {
         expect(document.title).toBe('(3) teammate - Test team display name');
         wrapper.setProps({currentChannel: {}, currentTeammate: {}});
         instance.updateTitle();
-        expect(document.title).toBe('Mattermost - Join a team');
+        expect(document.title).toBe('Iconloop - Join a team');
     });
 
     test('should set correct title on mentions on safari', () => {
