@@ -870,7 +870,7 @@ class ChannelHeader extends React.PureComponent {
                         onClick={this.getFlagged}
                         tooltipKey={'flaggedPosts'}
                     />
-                    <UserGuideDropdown/>
+                    {/* <UserGuideDropdown/> */}
                 </div>
             </div>
         );
