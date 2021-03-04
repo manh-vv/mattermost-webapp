@@ -318,10 +318,10 @@ export default class Root extends React.PureComponent {
                         path={'/terms_of_service'}
                         component={TermsOfService}
                     />
-                    <Route
+                    {/* <Route
                         path={'/landing'}
                         component={LinkingLandingPage}
-                    />
+                    /> */}
                     <LoggedInRoute
                         path={'/admin_console'}
                         component={AdminConsole}

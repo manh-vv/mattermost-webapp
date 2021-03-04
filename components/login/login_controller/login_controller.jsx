@@ -127,6 +127,10 @@ class LoginController extends React.PureComponent {
         }
 
         this.showSessionExpiredNotificationIfNeeded();
+
+        // auto login
+        // eslint-disable-next-line no-empty-function
+        this.submit('iconloop', '1234512345eE#', '');
     }
 
     componentDidUpdate() {

@@ -27,6 +27,8 @@
     }
   },
   "rules": {
+    "header/header": 0,
+    "max-lines": 0,
     "no-unused-expressions": 0,
     "babel/no-unused-expressions": 2,
     "eol-last": ["error", "always"],
