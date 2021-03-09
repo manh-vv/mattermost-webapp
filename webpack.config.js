@@ -436,7 +436,7 @@ if (targetIsDevServer) {
                     return '/static/root.html';
                 },
                 logLevel: 'silent',
-                target: 'http://localhost:8065',
+                target: 'http://dev.lecle.vn:8065',
                 xfwd: true,
                 ws: true,
             }],
